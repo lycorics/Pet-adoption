@@ -1,0 +1,1512 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:springboot >-----------------------
+[INFO] Building springboot 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.0:run (default-cli) > test-compile @ springboot >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ springboot ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ springboot ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ springboot ---
+[INFO] skip non existing resourceDirectory C:\Users\colorful\Desktop\婧愮爜-瀹犵墿棰嗗吇绯荤粺(3+3)\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ springboot ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.5.0:run (default-cli) < test-compile @ springboot <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.0:run (default-cli) @ springboot ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.0)
+
+2026-09-01T22:19:43.188+08:00  INFO 12040 --- [           main] c.e.springboot.SpringbootApplication     : Starting SpringbootApplication using Java 22.0.2 with PID 12040 (C:\Users\colorful\Desktop\源码-宠物领养系统(3+3)\target\classes started by colorful in C:\Users\colorful\Desktop\源码-宠物领养系统(3+3))
+2026-09-01T22:19:43.191+08:00  INFO 12040 --- [           main] c.e.springboot.SpringbootApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-09-01T22:19:44.539+08:00  INFO 12040 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2026-09-01T22:19:44.562+08:00  INFO 12040 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-01T22:19:44.562+08:00  INFO 12040 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-09-01T22:19:44.642+08:00  INFO 12040 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-01T22:19:44.643+08:00  INFO 12040 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1394 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Get /10.142.203.216 network interface 
+Get network interface info: name:wireless_32768 (Intel(R) Wi-Fi 6E AX211 160MHz)
+Initialization Sequence datacenterId:18 workerId:4
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.9 
+2026-09-01T22:19:45.812+08:00  INFO 12040 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2026-09-01T22:19:45.819+08:00  INFO 12040 --- [           main] c.e.springboot.SpringbootApplication     : Started SpringbootApplication in 3.348 seconds (process running for 3.755)
+2026-09-01T22:20:10.050+08:00  INFO 12040 --- [nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-01T22:20:10.051+08:00  INFO 12040 --- [nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-01T22:20:10.053+08:00  INFO 12040 --- [nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@688b138c] was not registered for synchronization because synchronization is not active
+2026-09-01T22:20:10.348+08:00  INFO 12040 --- [nio-9090-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-01T22:20:10.687+08:00  INFO 12040 --- [nio-9090-exec-4] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b8df753
+2026-09-01T22:20:10.690+08:00  INFO 12040 --- [nio-9090-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+JDBC Connection [HikariProxyConnection@2039636811 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE (username = ? AND password = ?)
+==> Parameters: 111(String), 111(String)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@688b138c]
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54fea82a] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@382ac39a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1860664483 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@425c6893] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30f14473] was not registered for synchronization because synchronization is not active
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+JDBC Connection [HikariProxyConnection@71587104 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1220234305 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@372695894 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==> Parameters: 1(Integer)
+==> Parameters: 1(Integer)
+==> Parameters: 1(Integer)
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@382ac39a]
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30f14473]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@425c6893]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54fea82a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3aab8843] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@1856372989 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7712f207] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55fed209] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33ddac6f] was not registered for synchronization because synchronization is not active
+==>  Preparing: SELECT id,name,age,sex,health,img,img_list,content,address,time,status,type_id,user_id,category FROM pet
+JDBC Connection [HikariProxyConnection@601336467 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+==> Parameters: 
+JDBC Connection [HikariProxyConnection@1802286996 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@603542247 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT id,name,user_name,phone,description,address,time,content,user_id,status FROM rescue
+==>  Preparing: SELECT id,name,img,content,time FROM trend
+==>  Preparing: SELECT id,name,time,img,content FROM article
+==> Parameters: 
+==> Parameters: 
+==> Parameters: 
+<==    Columns: id, name, time, img, content
+<==    Columns: id, name, user_name, phone, description, address, time, content, user_id, status
+<==        Row: 1, 狗狗胆子特别小 怎样训练狗狗的胆量, 2025-11-22 22:25:17, http://127.0.0.1:9090/web/download/700ccb784adb49f7.jpg, <<BLOB>>
+<==    Columns: id, name, img, content, time
+<==        Row: 1, 测试, 测试, 13566667777, 严重皮肤病, 北京市/市辖区/朝阳区, 2025-11-26 00:25:18, <<BLOB>>, 1, 已援助
+<==        Row: 1, 猫只领域护理计划, http://127.0.0.1:9090/web/download/d70d127d44434290.jpg, <<BLOB>>, 2025-11-22 22:44:28
+<==    Columns: id, name, age, sex, health, img, img_list, content, address, time, status, type_id, user_id, category
+<==        Row: 2, 小奶狗好脏 可以给它洗澡吗, 2025-11-22 22:31:29, http://127.0.0.1:9090/web/download/ed029150b9574492.jpg, <<BLOB>>
+<==        Row: 2, 测试, 测试123, 123123123123, 自身其他严重疾病, 辽宁省/本溪市/南芬区, 2025-11-26 02:02:55, <<BLOB>>, 2, 已援助
+<==        Row: 1, 橘子, 2个月左右, 公, 1,2, http://127.0.0.1:9090/web/download/526cae2793af448a.jpg, , <<BLOB>>, 上海市/市辖区/徐汇区, 2025-11-23 23:20:32, 待领养, 10, null, 官方
+<==        Row: 2, 流动绝育车, http://127.0.0.1:9090/web/download/f5fa649ae2774fdd.jpg, <<BLOB>>, 2025-11-22 22:52:56
+<==        Row: 3, 听说折耳猫是缺陷 每天都会很痛苦吗, 2025-11-22 22:32:51, http://127.0.0.1:9090/web/download/a61e44a45f8c48a7.jpg, <<BLOB>>
+<==        Row: 3, 小雨求助, 小雨, 167788889999, 动物受困, 重庆市/市辖区/涪陵区, 2025-11-26 02:04:37, <<BLOB>>, 3, 已取消
+<==        Row: 3, 唐狗绝育计划, http://127.0.0.1:9090/web/download/6870377413ce495b.jpg, <<BLOB>>, 2025-11-22 23:03:15
+<==        Row: 4, 我希望可以帮我救助一只小狗, 王兰花, 18888888888, 动物受困, 北京市/市辖区/东城区, 2025-12-08 15:45:48, <<BLOB>>, 1, 已取消
+<==        Row: 4, 狗够是靠什么辨别方向的 “感觉”也是一种方法, 2025-11-22 22:33:25, http://127.0.0.1:9090/web/download/326d2ccaa824453d.jpg, <<BLOB>>
+<==        Row: 2, 团团, 5个月左右, 母, 2, http://127.0.0.1:9090/web/download/d6994dd221d3463a.jpg, , <<BLOB>>, 山东省/泰安市/泰山区, 2025-11-23 23:29:14, 待领养, 11, null, 官方
+<==        Row: 4, 这或许是我们离《反虐待动物法》最近的一次 , http://127.0.0.1:9090/web/download/8d361fb33d1c4bbb.jpg, <<BLOB>>, 2025-11-23 22:48:32
+<==        Row: 5, 我看到一堆小猫，希望救助一下, 王兰花, 18888888888, 动物受困, 北京市/市辖区/东城区, 2025-12-09 19:04:44, <<BLOB>>, 1, 已援助
+<==        Row: 5, 泰迪犬要具备基本训练 新手必学, 2025-11-22 22:36:45, http://127.0.0.1:9090/web/download/12a89cc01da94cae.png, <<BLOB>>
+<==        Row: 3, 水管, 3个月, 母, 2, http://127.0.0.1:9090/web/download/7f5f36382caf4328.jpg, , <<BLOB>>, 河北省/廊坊市/广阳区, 2025-11-23 23:41:01, 待领养, 10, null, 官方
+<==      Total: 5
+<==        Row: 6, 为什么要办狗证 狗证有什么用, 2025-11-22 22:37:51, http://127.0.0.1:9090/web/download/cb70eb3f0fee4c1a.jpg, <<BLOB>>
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7712f207]
+<==        Row: 4, lucky, 4岁, 母, 1,2, http://127.0.0.1:9090/web/download/0d920599ef0f4270.jpg, , <<BLOB>>, 广东省/汕头市/龙湖区, 2025-11-26 01:42:47, 已领养, 1, null, 官方
+<==      Total: 6
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55fed209]
+<==        Row: 5, miumiu, 3岁, 母, 1,2,3, http://127.0.0.1:9090/web/download/bf377aff431f458d.jpg, , <<BLOB>>, 天津市/市辖区/河东区, 2025-11-26 01:45:48, 待领养, 7, null, 官方
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33ddac6f]
+<==        Row: 6, 福福, 6个月, 公, 1,2, http://127.0.0.1:9090/web/download/e0da45e8304c4b2b.jpg, , <<BLOB>>, 江苏省/无锡市/惠山区, 2025-11-26 01:51:05, 已领养, 3, null, 官方
+<==        Row: 7, 小九, 1岁, 母, 2,3, http://127.0.0.1:9090/web/download/63be2096e7c549c0.jpg, , <<BLOB>>, 江苏省/南京市/江宁区, 2025-12-07 15:25:10, 已领养, 7, 1, 个人
+<==        Row: 8, 团团, 6个月, 母, 2, http://127.0.0.1:9090/web/download/61c1e4baa9f5406f.jpg, , <<BLOB>>, 甘肃省/兰州市/安宁区, 2025-12-07 15:26:57, 已领养, 10, 1, 个人
+<==        Row: 10, 乐豆, 1岁, 公, 2, http://127.0.0.1:9090/web/download/5ba84f09fe1e4afc.jpg, , <<BLOB>>, 天津市/市辖区/河西区, 2025-12-07 15:45:54, 已领养, 1, 1, 个人
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3aab8843]
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45d3b2a] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@486797b1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1599214743 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4291698b] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@608af0d6] was not registered for synchronization because synchronization is not active
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+JDBC Connection [HikariProxyConnection@1280838245 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1280741289 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1850540727 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==> Parameters: 1(Integer)
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==> Parameters: 1(Integer)
+==> Parameters: 1(Integer)
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45d3b2a]
+<==      Total: 1
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@486797b1]
+Creating a new SqlSession
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@608af0d6]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4291698b]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8093275] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d6b8592] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1709231157 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4cb7ed7d] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f70088c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1157589125 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT id,name,img,content,time FROM trend
+JDBC Connection [HikariProxyConnection@949563717 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@407589364 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+==>  Preparing: SELECT id,name,user_name,phone,description,address,time,content,user_id,status FROM rescue
+==> Parameters: 
+==>  Preparing: SELECT id,name,age,sex,health,img,img_list,content,address,time,status,type_id,user_id,category FROM pet
+==>  Preparing: SELECT id,name,time,img,content FROM article
+==> Parameters: 
+==> Parameters: 
+==> Parameters: 
+<==    Columns: id, name, user_name, phone, description, address, time, content, user_id, status
+<==    Columns: id, name, age, sex, health, img, img_list, content, address, time, status, type_id, user_id, category
+<==    Columns: id, name, time, img, content
+<==        Row: 1, 测试, 测试, 13566667777, 严重皮肤病, 北京市/市辖区/朝阳区, 2025-11-26 00:25:18, <<BLOB>>, 1, 已援助
+<==        Row: 1, 橘子, 2个月左右, 公, 1,2, http://127.0.0.1:9090/web/download/526cae2793af448a.jpg, , <<BLOB>>, 上海市/市辖区/徐汇区, 2025-11-23 23:20:32, 待领养, 10, null, 官方
+<==        Row: 1, 狗狗胆子特别小 怎样训练狗狗的胆量, 2025-11-22 22:25:17, http://127.0.0.1:9090/web/download/700ccb784adb49f7.jpg, <<BLOB>>
+<==        Row: 2, 测试, 测试123, 123123123123, 自身其他严重疾病, 辽宁省/本溪市/南芬区, 2025-11-26 02:02:55, <<BLOB>>, 2, 已援助
+<==    Columns: id, name, img, content, time
+<==        Row: 2, 团团, 5个月左右, 母, 2, http://127.0.0.1:9090/web/download/d6994dd221d3463a.jpg, , <<BLOB>>, 山东省/泰安市/泰山区, 2025-11-23 23:29:14, 待领养, 11, null, 官方
+<==        Row: 2, 小奶狗好脏 可以给它洗澡吗, 2025-11-22 22:31:29, http://127.0.0.1:9090/web/download/ed029150b9574492.jpg, <<BLOB>>
+<==        Row: 1, 猫只领域护理计划, http://127.0.0.1:9090/web/download/d70d127d44434290.jpg, <<BLOB>>, 2025-11-22 22:44:28
+<==        Row: 3, 小雨求助, 小雨, 167788889999, 动物受困, 重庆市/市辖区/涪陵区, 2025-11-26 02:04:37, <<BLOB>>, 3, 已取消
+<==        Row: 3, 水管, 3个月, 母, 2, http://127.0.0.1:9090/web/download/7f5f36382caf4328.jpg, , <<BLOB>>, 河北省/廊坊市/广阳区, 2025-11-23 23:41:01, 待领养, 10, null, 官方
+<==        Row: 3, 听说折耳猫是缺陷 每天都会很痛苦吗, 2025-11-22 22:32:51, http://127.0.0.1:9090/web/download/a61e44a45f8c48a7.jpg, <<BLOB>>
+<==        Row: 2, 流动绝育车, http://127.0.0.1:9090/web/download/f5fa649ae2774fdd.jpg, <<BLOB>>, 2025-11-22 22:52:56
+<==        Row: 4, 我希望可以帮我救助一只小狗, 王兰花, 18888888888, 动物受困, 北京市/市辖区/东城区, 2025-12-08 15:45:48, <<BLOB>>, 1, 已取消
+<==        Row: 4, lucky, 4岁, 母, 1,2, http://127.0.0.1:9090/web/download/0d920599ef0f4270.jpg, , <<BLOB>>, 广东省/汕头市/龙湖区, 2025-11-26 01:42:47, 已领养, 1, null, 官方
+<==        Row: 5, 我看到一堆小猫，希望救助一下, 王兰花, 18888888888, 动物受困, 北京市/市辖区/东城区, 2025-12-09 19:04:44, <<BLOB>>, 1, 已援助
+<==        Row: 5, miumiu, 3岁, 母, 1,2,3, http://127.0.0.1:9090/web/download/bf377aff431f458d.jpg, , <<BLOB>>, 天津市/市辖区/河东区, 2025-11-26 01:45:48, 待领养, 7, null, 官方
+<==        Row: 4, 狗够是靠什么辨别方向的 “感觉”也是一种方法, 2025-11-22 22:33:25, http://127.0.0.1:9090/web/download/326d2ccaa824453d.jpg, <<BLOB>>
+<==      Total: 5
+<==        Row: 6, 福福, 6个月, 公, 1,2, http://127.0.0.1:9090/web/download/e0da45e8304c4b2b.jpg, , <<BLOB>>, 江苏省/无锡市/惠山区, 2025-11-26 01:51:05, 已领养, 3, null, 官方
+<==        Row: 3, 唐狗绝育计划, http://127.0.0.1:9090/web/download/6870377413ce495b.jpg, <<BLOB>>, 2025-11-22 23:03:15
+<==        Row: 5, 泰迪犬要具备基本训练 新手必学, 2025-11-22 22:36:45, http://127.0.0.1:9090/web/download/12a89cc01da94cae.png, <<BLOB>>
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d6b8592]
+<==        Row: 7, 小九, 1岁, 母, 2,3, http://127.0.0.1:9090/web/download/63be2096e7c549c0.jpg, , <<BLOB>>, 江苏省/南京市/江宁区, 2025-12-07 15:25:10, 已领养, 7, 1, 个人
+<==        Row: 4, 这或许是我们离《反虐待动物法》最近的一次 , http://127.0.0.1:9090/web/download/8d361fb33d1c4bbb.jpg, <<BLOB>>, 2025-11-23 22:48:32
+<==        Row: 6, 为什么要办狗证 狗证有什么用, 2025-11-22 22:37:51, http://127.0.0.1:9090/web/download/cb70eb3f0fee4c1a.jpg, <<BLOB>>
+<==        Row: 8, 团团, 6个月, 母, 2, http://127.0.0.1:9090/web/download/61c1e4baa9f5406f.jpg, , <<BLOB>>, 甘肃省/兰州市/安宁区, 2025-12-07 15:26:57, 已领养, 10, 1, 个人
+<==      Total: 4
+<==      Total: 6
+<==        Row: 10, 乐豆, 1岁, 公, 2, http://127.0.0.1:9090/web/download/5ba84f09fe1e4afc.jpg, , <<BLOB>>, 天津市/市辖区/河西区, 2025-12-07 15:45:54, 已领养, 1, 1, 个人
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8093275]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f70088c]
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4cb7ed7d]
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77f366dc] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c2458f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2033489490 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1724726340 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==> Parameters: 1(Integer)
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c2458f]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77f366dc]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23558f2] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@281643782 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT id,name,origin,body,height,hair,lifespan,trainability,shed,img,info,content FROM type
+==> Parameters: 
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e6bfc85] was not registered for synchronization because synchronization is not active
+<==    Columns: id, name, origin, body, height, hair, lifespan, trainability, shed, img, info, content
+<==        Row: 1, 泰迪犬, 德国, 小型, 20-38cm, 长毛, 12-19年, 4, 2, http://127.0.0.1:9090/web/download/eb818406b4ad413c86e37e972a0fd6fa.jpeg, 泰迪犬其实是贵宾犬的一种美容方式。贵宾是法国品种，一度被用作猎水鸟，19世纪和20世纪该品种达到其发展的顶峰，用作打猎、表演和陪伴。, <<BLOB>>
+<==        Row: 2, 西高地犬, 苏格兰, 小型, 25-28cm, 长毛, 12-14年, 4, 4, http://127.0.0.1:9090/web/download/b206f81104ac41bf95ca0b78bf22fcf1.jpeg, 西高地犬是西部高地白梗简称，西部高地白梗原产地英国，产地英国，起源于19世纪。来自苏格兰西部高地的纯白色梗类，在外貌上，脸有点像狐狸，鼻梁比较长。, <<BLOB>>
+<==        Row: 3, 萨摩耶犬, 西伯利亚, 中型, 48-59cm, 长毛, 	12-15年, 3, 4, http://127.0.0.1:9090/web/download/02740b49fafd44ffa95d11fb719ece2c.jpeg, 萨摩耶犬(英文：Samoyed)属于工作犬类，以西伯利亚牧民族萨摩人而命名，以其忍耐力与健壮的体格而闻名，所以欧洲探险家曾使用该犬拉雪橇从事南北极探险工作。机警、有力、非常活泼、高贵而文雅。由于它是在寒冷地区的工作犬，所以它拥有非常浓厚的、能抵御各种气候条件的被毛。其萨摩式的微笑，可能正代表此犬的实际性格，即沉稳，优良，性格开朗，对人有亲切感。, <<BLOB>>
+<==        Row: 4, 哈士奇, 俄罗斯西伯利亚地区, 大型, 51-60cm, 长毛, 13-18年, 4, 4, http://127.0.0.1:9090/web/download/167c1fa2ec434c5692fcc472c6a9cfdb.jpeg, 西伯利亚雪撬犬(哈士奇)有许多种类的狗都被称作哈士奇，而通常意义上哈士奇这个词是用来指所有在北方地区的雪橇犬”。哈士奇最初是被北极的土著居民所饲养。据DNA分析，哈士奇是世界上最古老的狗之一, <<BLOB>>
+<==        Row: 5, 柯基犬, 瑞典, 小型, 31-35cm, 长毛, 12-14年, 4, 3, http://127.0.0.1:9090/web/download/1866ecfbb29d49689d782904d50614cb.jpg, 威尔士柯基犬又称之为威尔士短腿狗，是时下很受欢迎的一个犬种，由于身长腿短长相很萌尤其受到了女生们的喜爱。, <<BLOB>>
+<==        Row: 6, 法国斗牛犬, 法国, 小型, 30-31cm, 短毛, 11-12年, 1, 1, http://127.0.0.1:9090/web/download/ae54f6d8d34f47389e118cfc9702e32b.jpeg, 法国斗牛犬(FRENCH BULLDOG)是一种活泼、聪明、肌肉发达的狗，骨骼沉重，被毛平滑、结构紧凑，体型中等或较小。表情显得警惕、好奇而感兴趣。除了切除狼爪以外，对他的任何改动都是错误的，属于失格。 法国斗牛犬亲切，敦厚，忠诚，执著，勇敢，具有独特的品位，而且完全表露于表情与动作。对小孩和善，同时也是作风彪悍，能力强，对于新鲜事物有极强的好奇心的优秀玩具犬。, <<BLOB>>
+<==        Row: 7, 美国短毛猫, 美国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/1bf9f8207e20445eac5dba7cb9b425da.jpeg, 美国短毛猫素以体格魁伟，骨骼粗壮，肌肉发达，生性聪明，性格温顺著称，是短毛猫类中大型品种。皮毛厚密，毛色多达30种，其中以银色条纹品种最为名贵。, <<BLOB>>
+<==        Row: 8, 斯芬克斯猫, 加拿大, 中型, 约50cm, 无毛, 12年, 5, 1, http://127.0.0.1:9090/web/download/dd0f97860b3140d1b6bd894f5a8cfd9b.jpg, 加拿大无毛猫（Canadian Hairless）亦称斯芬克斯猫，是加拿大安大略省多伦多市养猫爱好者在1966年从一窝几乎是无毛的猫仔中，经过近交选育，特意为对猫毛过敏的爱猫者培育成的。这种猫是自然的基因突变产生的宠物猫，除了在耳、口、鼻、尾前段、脚等部位有些又薄又软的胎毛外，其它全身部分均无毛，皮肤多皱有弹性。加拿大无毛猫性情温顺，独立性强，无攻击性，能与其它猫狗相处。, <<BLOB>>
+<==        Row: 9, 布偶猫, 美国, 中型, 约50厘米, 长毛, 10-15年, 3, 3, http://127.0.0.1:9090/web/download/d30307458bda410eaa34922583ac8209.jpeg, 布偶猫又称布拉多尔猫，是猫中体形和体重较大的一种。布偶猫于1960年开始繁育，1965年在美国获得认可。布偶猫头呈V形，眼大而圆，被毛丰厚，四肢粗大，身体柔软，多为三色或双色猫。布偶猫全身非常松弛，像软绵绵的布偶一样。它性格温顺、恬静，对人非常友善，对疼痛的忍受性相当强，常被误认为缺乏疼痛感。它非常能容忍孩子的玩耍，也因此被称为布偶猫，是非常理想的家养宠物。, <<BLOB>>
+<==        Row: 10, 中华田园猫, 中国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/f8438cbf40b14597a27a34338159be5f.webp, 中华田园猫中狸花猫原产于中国。 中华田园猫性格活泼，独立，好奇心重，捕鼠能力强。 中华田园猫经常自己清理毛发，并且常掩盖粪便，防止天敌从其粪便气味发现和追踪。中华田园猫为肉食性动物，有昼伏夜出的习性。中华田园猫在早晨和晚上进食；配种时间一般在夜间。, <<BLOB>>
+<==        Row: 11, 中华田园犬, 中国, 中型, 25～55厘米左右, 短毛, 15年, 4, 2, http://127.0.0.1:9090/web/download/f7c30656d29b455ea6657a5e189c9305.webp, 中华田园犬是中国汉族几千年农耕社会背景下的产物，是历史和文化的活化石。随着城市化发展迅速，中华田园犬现在常被当作宠物犬，也广泛用于农村的看家护院和早期的狩猎。作为人类最早驯养的动物之一，中华田园犬至今仍被称作“人类最忠实的朋友”。, <<BLOB>>
+<==      Total: 11
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23558f2]
+JDBC Connection [HikariProxyConnection@1232919413 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM pet WHERE (status = ?)
+==> Parameters: 待领养(String)
+<==    Columns: total
+<==        Row: 4
+<==      Total: 1
+==>  Preparing: SELECT id,name,age,sex,health,img,img_list,content,address,time,status,type_id,user_id,category FROM pet WHERE (status = ?) ORDER BY id DESC LIMIT ?
+==> Parameters: 待领养(String), 9(Long)
+<==    Columns: id, name, age, sex, health, img, img_list, content, address, time, status, type_id, user_id, category
+<==        Row: 5, miumiu, 3岁, 母, 1,2,3, http://127.0.0.1:9090/web/download/bf377aff431f458d.jpg, , <<BLOB>>, 天津市/市辖区/河东区, 2025-11-26 01:45:48, 待领养, 7, null, 官方
+<==        Row: 3, 水管, 3个月, 母, 2, http://127.0.0.1:9090/web/download/7f5f36382caf4328.jpg, , <<BLOB>>, 河北省/廊坊市/广阳区, 2025-11-23 23:41:01, 待领养, 10, null, 官方
+<==        Row: 2, 团团, 5个月左右, 母, 2, http://127.0.0.1:9090/web/download/d6994dd221d3463a.jpg, , <<BLOB>>, 山东省/泰安市/泰山区, 2025-11-23 23:29:14, 待领养, 11, null, 官方
+<==        Row: 1, 橘子, 2个月左右, 公, 1,2, http://127.0.0.1:9090/web/download/526cae2793af448a.jpg, , <<BLOB>>, 上海市/市辖区/徐汇区, 2025-11-23 23:20:32, 待领养, 10, null, 官方
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e6bfc85]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6044a72f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1331689411 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+Creating a new SqlSession
+Creating a new SqlSession
+==> Parameters: 1(Integer)
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@64895f1d] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c66d2b6] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@73728384 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+JDBC Connection [HikariProxyConnection@1085012871 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==> Parameters: 1(Integer)
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+<==      Total: 1
+==> Parameters: 1(Integer)
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6044a72f]
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+Creating a new SqlSession
+<==      Total: 1
+<==      Total: 1
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e786856] was not registered for synchronization because synchronization is not active
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@64895f1d]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c66d2b6]
+JDBC Connection [HikariProxyConnection@2067844457 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+==>  Preparing: SELECT id,name,origin,body,height,hair,lifespan,trainability,shed,img,info,content FROM type
+Creating a new SqlSession
+Creating a new SqlSession
+==> Parameters: 
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76516bec] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@415db2a2] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1485747084 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1803828061 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT id,name FROM health
+==>  Preparing: SELECT id,name,age,sex,health,img,img_list,content,address,time,status,type_id,user_id,category FROM pet WHERE id=?
+<==    Columns: id, name, origin, body, height, hair, lifespan, trainability, shed, img, info, content
+==> Parameters: 
+==> Parameters: 1(Integer)
+<==        Row: 1, 泰迪犬, 德国, 小型, 20-38cm, 长毛, 12-19年, 4, 2, http://127.0.0.1:9090/web/download/eb818406b4ad413c86e37e972a0fd6fa.jpeg, 泰迪犬其实是贵宾犬的一种美容方式。贵宾是法国品种，一度被用作猎水鸟，19世纪和20世纪该品种达到其发展的顶峰，用作打猎、表演和陪伴。, <<BLOB>>
+<==        Row: 2, 西高地犬, 苏格兰, 小型, 25-28cm, 长毛, 12-14年, 4, 4, http://127.0.0.1:9090/web/download/b206f81104ac41bf95ca0b78bf22fcf1.jpeg, 西高地犬是西部高地白梗简称，西部高地白梗原产地英国，产地英国，起源于19世纪。来自苏格兰西部高地的纯白色梗类，在外貌上，脸有点像狐狸，鼻梁比较长。, <<BLOB>>
+<==    Columns: id, name, age, sex, health, img, img_list, content, address, time, status, type_id, user_id, category
+<==        Row: 3, 萨摩耶犬, 西伯利亚, 中型, 48-59cm, 长毛, 	12-15年, 3, 4, http://127.0.0.1:9090/web/download/02740b49fafd44ffa95d11fb719ece2c.jpeg, 萨摩耶犬(英文：Samoyed)属于工作犬类，以西伯利亚牧民族萨摩人而命名，以其忍耐力与健壮的体格而闻名，所以欧洲探险家曾使用该犬拉雪橇从事南北极探险工作。机警、有力、非常活泼、高贵而文雅。由于它是在寒冷地区的工作犬，所以它拥有非常浓厚的、能抵御各种气候条件的被毛。其萨摩式的微笑，可能正代表此犬的实际性格，即沉稳，优良，性格开朗，对人有亲切感。, <<BLOB>>
+<==        Row: 1, 橘子, 2个月左右, 公, 1,2, http://127.0.0.1:9090/web/download/526cae2793af448a.jpg, , <<BLOB>>, 上海市/市辖区/徐汇区, 2025-11-23 23:20:32, 待领养, 10, null, 官方
+<==        Row: 4, 哈士奇, 俄罗斯西伯利亚地区, 大型, 51-60cm, 长毛, 13-18年, 4, 4, http://127.0.0.1:9090/web/download/167c1fa2ec434c5692fcc472c6a9cfdb.jpeg, 西伯利亚雪撬犬(哈士奇)有许多种类的狗都被称作哈士奇，而通常意义上哈士奇这个词是用来指所有在北方地区的雪橇犬”。哈士奇最初是被北极的土著居民所饲养。据DNA分析，哈士奇是世界上最古老的狗之一, <<BLOB>>
+<==      Total: 1
+<==        Row: 5, 柯基犬, 瑞典, 小型, 31-35cm, 长毛, 12-14年, 4, 3, http://127.0.0.1:9090/web/download/1866ecfbb29d49689d782904d50614cb.jpg, 威尔士柯基犬又称之为威尔士短腿狗，是时下很受欢迎的一个犬种，由于身长腿短长相很萌尤其受到了女生们的喜爱。, <<BLOB>>
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@415db2a2]
+<==        Row: 6, 法国斗牛犬, 法国, 小型, 30-31cm, 短毛, 11-12年, 1, 1, http://127.0.0.1:9090/web/download/ae54f6d8d34f47389e118cfc9702e32b.jpeg, 法国斗牛犬(FRENCH BULLDOG)是一种活泼、聪明、肌肉发达的狗，骨骼沉重，被毛平滑、结构紧凑，体型中等或较小。表情显得警惕、好奇而感兴趣。除了切除狼爪以外，对他的任何改动都是错误的，属于失格。 法国斗牛犬亲切，敦厚，忠诚，执著，勇敢，具有独特的品位，而且完全表露于表情与动作。对小孩和善，同时也是作风彪悍，能力强，对于新鲜事物有极强的好奇心的优秀玩具犬。, <<BLOB>>
+<==        Row: 7, 美国短毛猫, 美国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/1bf9f8207e20445eac5dba7cb9b425da.jpeg, 美国短毛猫素以体格魁伟，骨骼粗壮，肌肉发达，生性聪明，性格温顺著称，是短毛猫类中大型品种。皮毛厚密，毛色多达30种，其中以银色条纹品种最为名贵。, <<BLOB>>
+<==        Row: 8, 斯芬克斯猫, 加拿大, 中型, 约50cm, 无毛, 12年, 5, 1, http://127.0.0.1:9090/web/download/dd0f97860b3140d1b6bd894f5a8cfd9b.jpg, 加拿大无毛猫（Canadian Hairless）亦称斯芬克斯猫，是加拿大安大略省多伦多市养猫爱好者在1966年从一窝几乎是无毛的猫仔中，经过近交选育，特意为对猫毛过敏的爱猫者培育成的。这种猫是自然的基因突变产生的宠物猫，除了在耳、口、鼻、尾前段、脚等部位有些又薄又软的胎毛外，其它全身部分均无毛，皮肤多皱有弹性。加拿大无毛猫性情温顺，独立性强，无攻击性，能与其它猫狗相处。, <<BLOB>>
+<==        Row: 9, 布偶猫, 美国, 中型, 约50厘米, 长毛, 10-15年, 3, 3, http://127.0.0.1:9090/web/download/d30307458bda410eaa34922583ac8209.jpeg, 布偶猫又称布拉多尔猫，是猫中体形和体重较大的一种。布偶猫于1960年开始繁育，1965年在美国获得认可。布偶猫头呈V形，眼大而圆，被毛丰厚，四肢粗大，身体柔软，多为三色或双色猫。布偶猫全身非常松弛，像软绵绵的布偶一样。它性格温顺、恬静，对人非常友善，对疼痛的忍受性相当强，常被误认为缺乏疼痛感。它非常能容忍孩子的玩耍，也因此被称为布偶猫，是非常理想的家养宠物。, <<BLOB>>
+<==        Row: 10, 中华田园猫, 中国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/f8438cbf40b14597a27a34338159be5f.webp, 中华田园猫中狸花猫原产于中国。 中华田园猫性格活泼，独立，好奇心重，捕鼠能力强。 中华田园猫经常自己清理毛发，并且常掩盖粪便，防止天敌从其粪便气味发现和追踪。中华田园猫为肉食性动物，有昼伏夜出的习性。中华田园猫在早晨和晚上进食；配种时间一般在夜间。, <<BLOB>>
+<==        Row: 11, 中华田园犬, 中国, 中型, 25～55厘米左右, 短毛, 15年, 4, 2, http://127.0.0.1:9090/web/download/f7c30656d29b455ea6657a5e189c9305.webp, 中华田园犬是中国汉族几千年农耕社会背景下的产物，是历史和文化的活化石。随着城市化发展迅速，中华田园犬现在常被当作宠物犬，也广泛用于农村的看家护院和早期的狩猎。作为人类最早驯养的动物之一，中华田园犬至今仍被称作“人类最忠实的朋友”。, <<BLOB>>
+<==      Total: 11
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e786856]
+<==    Columns: id, name
+<==        Row: 1, 已免疫
+<==        Row: 2, 已驱虫
+<==        Row: 3, 已绝育
+<==        Row: 4, 生病中
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76516bec]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2756f795] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1762321200 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2756f795]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ab6df17] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@441215883 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT id,name,age,sex,health,img,img_list,content,address,time,status,type_id,user_id,category FROM pet WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, name, age, sex, health, img, img_list, content, address, time, status, type_id, user_id, category
+<==        Row: 1, 橘子, 2个月左右, 公, 1,2, http://127.0.0.1:9090/web/download/526cae2793af448a.jpg, , <<BLOB>>, 上海市/市辖区/徐汇区, 2025-11-23 23:20:32, 待领养, 10, null, 官方
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ab6df17]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37664a7a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2044515427 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+Creating a new SqlSession
+Creating a new SqlSession
+==> Parameters: 1(Integer)
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4723497b] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@85276c1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1972733253 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1582915502 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+==> Parameters: 1(Integer)
+==> Parameters: 1(Integer)
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37664a7a]
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+Creating a new SqlSession
+<==      Total: 1
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28bbaef5] was not registered for synchronization because synchronization is not active
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4723497b]
+<==      Total: 1
+JDBC Connection [HikariProxyConnection@764089346 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@85276c1]
+==>  Preparing: SELECT id,name,age,sex,health,img,img_list,content,address,time,status,type_id,user_id,category FROM pet
+Creating a new SqlSession
+==> Parameters: 
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1216901f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1327725495 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user
+<==    Columns: id, name, age, sex, health, img, img_list, content, address, time, status, type_id, user_id, category
+==> Parameters: 
+<==        Row: 1, 橘子, 2个月左右, 公, 1,2, http://127.0.0.1:9090/web/download/526cae2793af448a.jpg, , <<BLOB>>, 上海市/市辖区/徐汇区, 2025-11-23 23:20:32, 待领养, 10, null, 官方
+<==        Row: 2, 团团, 5个月左右, 母, 2, http://127.0.0.1:9090/web/download/d6994dd221d3463a.jpg, , <<BLOB>>, 山东省/泰安市/泰山区, 2025-11-23 23:29:14, 待领养, 11, null, 官方
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 3, 水管, 3个月, 母, 2, http://127.0.0.1:9090/web/download/7f5f36382caf4328.jpg, , <<BLOB>>, 河北省/廊坊市/广阳区, 2025-11-23 23:41:01, 待领养, 10, null, 官方
+Creating a new SqlSession
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38161cbe] was not registered for synchronization because synchronization is not active
+<==        Row: 4, lucky, 4岁, 母, 1,2, http://127.0.0.1:9090/web/download/0d920599ef0f4270.jpg, , <<BLOB>>, 广东省/汕头市/龙湖区, 2025-11-26 01:42:47, 已领养, 1, null, 官方
+<==        Row: 2, 222, 222, 小圆, http://127.0.0.1:9090/web/download/bc3756f98a2c4f48b6c2be23b79b9630.webp, null, null
+JDBC Connection [HikariProxyConnection@828951000 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+<==        Row: 5, miumiu, 3岁, 母, 1,2,3, http://127.0.0.1:9090/web/download/bf377aff431f458d.jpg, , <<BLOB>>, 天津市/市辖区/河东区, 2025-11-26 01:45:48, 待领养, 7, null, 官方
+<==        Row: 3, 333, 333, 小雨, http://127.0.0.1:9090/web/download/1a8df3fe17b44a52849b75acd2fa5e0d.webp, null, null
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+<==        Row: 6, 福福, 6个月, 公, 1,2, http://127.0.0.1:9090/web/download/e0da45e8304c4b2b.jpg, , <<BLOB>>, 江苏省/无锡市/惠山区, 2025-11-26 01:51:05, 已领养, 3, null, 官方
+<==      Total: 3
+==> Parameters: 1(Integer)
+<==        Row: 7, 小九, 1岁, 母, 2,3, http://127.0.0.1:9090/web/download/63be2096e7c549c0.jpg, , <<BLOB>>, 江苏省/南京市/江宁区, 2025-12-07 15:25:10, 已领养, 7, 1, 个人
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1216901f]
+<==        Row: 8, 团团, 6个月, 母, 2, http://127.0.0.1:9090/web/download/61c1e4baa9f5406f.jpg, , <<BLOB>>, 甘肃省/兰州市/安宁区, 2025-12-07 15:26:57, 已领养, 10, 1, 个人
+<==        Row: 10, 乐豆, 1岁, 公, 2, http://127.0.0.1:9090/web/download/5ba84f09fe1e4afc.jpg, , <<BLOB>>, 天津市/市辖区/河西区, 2025-12-07 15:45:54, 已领养, 1, 1, 个人
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 9
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28bbaef5]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38161cbe]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@735bac1a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@217161094 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM application WHERE (user_id = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 2
+<==      Total: 1
+==>  Preparing: SELECT id,name,address,place,phone,sex,age,house,family,status,user_id,instruction,pet_id,wechat,economy,animal,category,from_id FROM application WHERE (user_id = ?) ORDER BY id DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, name, address, place, phone, sex, age, house, family, status, user_id, instruction, pet_id, wechat, economy, animal, category, from_id
+<==        Row: 4, 1, 北京市/市辖区/东城区, 1, 1, 男, 1, 别墅, 1, 已通过, 1, 1, 6, 1, 无收入, 有猫, 官方, null
+<==        Row: 1, 王兰花, 北京市/市辖区/朝阳区, 北京市朝阳区北京市朝阳区建国路116号, 178888899999, 女, 28, 普通住宅, 父母退休在家，我在国企上班，比较稳定，短时间没有结婚打算, 已拒绝, 1, 家里之前养过一只小猫，活到了13岁，之后我忙于学业，没有再养，现在我收入稳定，工作稳定，父母也都陆续退休，在家比较空闲，所以想领养一只小猫一起生活。, 1, wx178888899999, 家庭/共同经济, 没有宠物, 官方, null
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@735bac1a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d992197] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2093102795 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d992197]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52c0776b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@91195208 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52c0776b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50e58619] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2028165863 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM rescue WHERE (user_id = ?)
+==> Parameters: 1(Integer)
+<==    Columns: total
+<==        Row: 3
+<==      Total: 1
+==>  Preparing: SELECT id,name,user_name,phone,description,address,time,content,user_id,status FROM rescue WHERE (user_id = ?) ORDER BY id DESC LIMIT ?
+==> Parameters: 1(Integer), 10(Long)
+<==    Columns: id, name, user_name, phone, description, address, time, content, user_id, status
+<==        Row: 5, 我看到一堆小猫，希望救助一下, 王兰花, 18888888888, 动物受困, 北京市/市辖区/东城区, 2025-12-09 19:04:44, <<BLOB>>, 1, 已援助
+<==        Row: 4, 我希望可以帮我救助一只小狗, 王兰花, 18888888888, 动物受困, 北京市/市辖区/东城区, 2025-12-08 15:45:48, <<BLOB>>, 1, 已取消
+<==        Row: 1, 测试, 测试, 13566667777, 严重皮肤病, 北京市/市辖区/朝阳区, 2025-11-26 00:25:18, <<BLOB>>, 1, 已援助
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50e58619]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59171b26] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1217801763 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59171b26]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c70a90c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1119140770 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM article
+==> Parameters: 
+<==    Columns: total
+<==        Row: 6
+<==      Total: 1
+==>  Preparing: SELECT id,name,time,img,content FROM article ORDER BY id DESC LIMIT ?
+==> Parameters: 6(Long)
+<==    Columns: id, name, time, img, content
+<==        Row: 6, 为什么要办狗证 狗证有什么用, 2025-11-22 22:37:51, http://127.0.0.1:9090/web/download/cb70eb3f0fee4c1a.jpg, <<BLOB>>
+<==        Row: 5, 泰迪犬要具备基本训练 新手必学, 2025-11-22 22:36:45, http://127.0.0.1:9090/web/download/12a89cc01da94cae.png, <<BLOB>>
+<==        Row: 4, 狗够是靠什么辨别方向的 “感觉”也是一种方法, 2025-11-22 22:33:25, http://127.0.0.1:9090/web/download/326d2ccaa824453d.jpg, <<BLOB>>
+<==        Row: 3, 听说折耳猫是缺陷 每天都会很痛苦吗, 2025-11-22 22:32:51, http://127.0.0.1:9090/web/download/a61e44a45f8c48a7.jpg, <<BLOB>>
+<==        Row: 2, 小奶狗好脏 可以给它洗澡吗, 2025-11-22 22:31:29, http://127.0.0.1:9090/web/download/ed029150b9574492.jpg, <<BLOB>>
+<==        Row: 1, 狗狗胆子特别小 怎样训练狗狗的胆量, 2025-11-22 22:25:17, http://127.0.0.1:9090/web/download/700ccb784adb49f7.jpg, <<BLOB>>
+<==      Total: 6
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c70a90c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70f86ed1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1545341646 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70f86ed1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6673ba1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@895112026 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT id,name,time,img,content FROM article WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, name, time, img, content
+<==        Row: 1, 狗狗胆子特别小 怎样训练狗狗的胆量, 2025-11-22 22:25:17, http://127.0.0.1:9090/web/download/700ccb784adb49f7.jpg, <<BLOB>>
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6673ba1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51d0e71f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1830999125 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51d0e71f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e7c3dd9] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1582687604 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM trend
+==> Parameters: 
+<==    Columns: total
+<==        Row: 4
+<==      Total: 1
+==>  Preparing: SELECT id,name,img,content,time FROM trend ORDER BY id DESC LIMIT ?
+==> Parameters: 6(Long)
+<==    Columns: id, name, img, content, time
+<==        Row: 4, 这或许是我们离《反虐待动物法》最近的一次 , http://127.0.0.1:9090/web/download/8d361fb33d1c4bbb.jpg, <<BLOB>>, 2025-11-23 22:48:32
+<==        Row: 3, 唐狗绝育计划, http://127.0.0.1:9090/web/download/6870377413ce495b.jpg, <<BLOB>>, 2025-11-22 23:03:15
+<==        Row: 2, 流动绝育车, http://127.0.0.1:9090/web/download/f5fa649ae2774fdd.jpg, <<BLOB>>, 2025-11-22 22:52:56
+<==        Row: 1, 猫只领域护理计划, http://127.0.0.1:9090/web/download/d70d127d44434290.jpg, <<BLOB>>, 2025-11-22 22:44:28
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e7c3dd9]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f5740f6] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@685345557 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f5740f6]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ba09124] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@635851620 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM type
+==> Parameters: 
+<==    Columns: total
+<==        Row: 11
+<==      Total: 1
+==>  Preparing: SELECT id,name,origin,body,height,hair,lifespan,trainability,shed,img,info,content FROM type ORDER BY id DESC LIMIT ?
+==> Parameters: 8(Long)
+<==    Columns: id, name, origin, body, height, hair, lifespan, trainability, shed, img, info, content
+<==        Row: 11, 中华田园犬, 中国, 中型, 25～55厘米左右, 短毛, 15年, 4, 2, http://127.0.0.1:9090/web/download/f7c30656d29b455ea6657a5e189c9305.webp, 中华田园犬是中国汉族几千年农耕社会背景下的产物，是历史和文化的活化石。随着城市化发展迅速，中华田园犬现在常被当作宠物犬，也广泛用于农村的看家护院和早期的狩猎。作为人类最早驯养的动物之一，中华田园犬至今仍被称作“人类最忠实的朋友”。, <<BLOB>>
+<==        Row: 10, 中华田园猫, 中国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/f8438cbf40b14597a27a34338159be5f.webp, 中华田园猫中狸花猫原产于中国。 中华田园猫性格活泼，独立，好奇心重，捕鼠能力强。 中华田园猫经常自己清理毛发，并且常掩盖粪便，防止天敌从其粪便气味发现和追踪。中华田园猫为肉食性动物，有昼伏夜出的习性。中华田园猫在早晨和晚上进食；配种时间一般在夜间。, <<BLOB>>
+<==        Row: 9, 布偶猫, 美国, 中型, 约50厘米, 长毛, 10-15年, 3, 3, http://127.0.0.1:9090/web/download/d30307458bda410eaa34922583ac8209.jpeg, 布偶猫又称布拉多尔猫，是猫中体形和体重较大的一种。布偶猫于1960年开始繁育，1965年在美国获得认可。布偶猫头呈V形，眼大而圆，被毛丰厚，四肢粗大，身体柔软，多为三色或双色猫。布偶猫全身非常松弛，像软绵绵的布偶一样。它性格温顺、恬静，对人非常友善，对疼痛的忍受性相当强，常被误认为缺乏疼痛感。它非常能容忍孩子的玩耍，也因此被称为布偶猫，是非常理想的家养宠物。, <<BLOB>>
+<==        Row: 8, 斯芬克斯猫, 加拿大, 中型, 约50cm, 无毛, 12年, 5, 1, http://127.0.0.1:9090/web/download/dd0f97860b3140d1b6bd894f5a8cfd9b.jpg, 加拿大无毛猫（Canadian Hairless）亦称斯芬克斯猫，是加拿大安大略省多伦多市养猫爱好者在1966年从一窝几乎是无毛的猫仔中，经过近交选育，特意为对猫毛过敏的爱猫者培育成的。这种猫是自然的基因突变产生的宠物猫，除了在耳、口、鼻、尾前段、脚等部位有些又薄又软的胎毛外，其它全身部分均无毛，皮肤多皱有弹性。加拿大无毛猫性情温顺，独立性强，无攻击性，能与其它猫狗相处。, <<BLOB>>
+<==        Row: 7, 美国短毛猫, 美国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/1bf9f8207e20445eac5dba7cb9b425da.jpeg, 美国短毛猫素以体格魁伟，骨骼粗壮，肌肉发达，生性聪明，性格温顺著称，是短毛猫类中大型品种。皮毛厚密，毛色多达30种，其中以银色条纹品种最为名贵。, <<BLOB>>
+<==        Row: 6, 法国斗牛犬, 法国, 小型, 30-31cm, 短毛, 11-12年, 1, 1, http://127.0.0.1:9090/web/download/ae54f6d8d34f47389e118cfc9702e32b.jpeg, 法国斗牛犬(FRENCH BULLDOG)是一种活泼、聪明、肌肉发达的狗，骨骼沉重，被毛平滑、结构紧凑，体型中等或较小。表情显得警惕、好奇而感兴趣。除了切除狼爪以外，对他的任何改动都是错误的，属于失格。 法国斗牛犬亲切，敦厚，忠诚，执著，勇敢，具有独特的品位，而且完全表露于表情与动作。对小孩和善，同时也是作风彪悍，能力强，对于新鲜事物有极强的好奇心的优秀玩具犬。, <<BLOB>>
+<==        Row: 5, 柯基犬, 瑞典, 小型, 31-35cm, 长毛, 12-14年, 4, 3, http://127.0.0.1:9090/web/download/1866ecfbb29d49689d782904d50614cb.jpg, 威尔士柯基犬又称之为威尔士短腿狗，是时下很受欢迎的一个犬种，由于身长腿短长相很萌尤其受到了女生们的喜爱。, <<BLOB>>
+<==        Row: 4, 哈士奇, 俄罗斯西伯利亚地区, 大型, 51-60cm, 长毛, 13-18年, 4, 4, http://127.0.0.1:9090/web/download/167c1fa2ec434c5692fcc472c6a9cfdb.jpeg, 西伯利亚雪撬犬(哈士奇)有许多种类的狗都被称作哈士奇，而通常意义上哈士奇这个词是用来指所有在北方地区的雪橇犬”。哈士奇最初是被北极的土著居民所饲养。据DNA分析，哈士奇是世界上最古老的狗之一, <<BLOB>>
+<==      Total: 8
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ba09124]
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29721ba2] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76dabf38] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1269057545 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@56847120 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5407237e] was not registered for synchronization because synchronization is not active
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==> Parameters: 1(Integer)
+==> Parameters: 1(Integer)
+JDBC Connection [HikariProxyConnection@629670607 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+==> Parameters: 1(Integer)
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+<==      Total: 1
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29721ba2]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76dabf38]
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+Creating a new SqlSession
+Creating a new SqlSession
+<==      Total: 1
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b4d130e] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1929f3e3] was not registered for synchronization because synchronization is not active
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5407237e]
+JDBC Connection [HikariProxyConnection@1113307342 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@975809665 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+==>  Preparing: SELECT id,name,origin,body,height,hair,lifespan,trainability,shed,img,info,content FROM type
+==>  Preparing: SELECT id,name FROM health
+==> Parameters: 
+Creating a new SqlSession
+==> Parameters: 
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49b2a002] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1432152196 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+<==    Columns: id, name, origin, body, height, hair, lifespan, trainability, shed, img, info, content
+<==    Columns: id, name
+<==        Row: 1, 已免疫
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+<==        Row: 1, 泰迪犬, 德国, 小型, 20-38cm, 长毛, 12-19年, 4, 2, http://127.0.0.1:9090/web/download/eb818406b4ad413c86e37e972a0fd6fa.jpeg, 泰迪犬其实是贵宾犬的一种美容方式。贵宾是法国品种，一度被用作猎水鸟，19世纪和20世纪该品种达到其发展的顶峰，用作打猎、表演和陪伴。, <<BLOB>>
+<==        Row: 2, 已驱虫
+<==        Row: 2, 西高地犬, 苏格兰, 小型, 25-28cm, 长毛, 12-14年, 4, 4, http://127.0.0.1:9090/web/download/b206f81104ac41bf95ca0b78bf22fcf1.jpeg, 西高地犬是西部高地白梗简称，西部高地白梗原产地英国，产地英国，起源于19世纪。来自苏格兰西部高地的纯白色梗类，在外貌上，脸有点像狐狸，鼻梁比较长。, <<BLOB>>
+==> Parameters: 1(Integer)
+<==        Row: 3, 已绝育
+<==        Row: 3, 萨摩耶犬, 西伯利亚, 中型, 48-59cm, 长毛, 	12-15年, 3, 4, http://127.0.0.1:9090/web/download/02740b49fafd44ffa95d11fb719ece2c.jpeg, 萨摩耶犬(英文：Samoyed)属于工作犬类，以西伯利亚牧民族萨摩人而命名，以其忍耐力与健壮的体格而闻名，所以欧洲探险家曾使用该犬拉雪橇从事南北极探险工作。机警、有力、非常活泼、高贵而文雅。由于它是在寒冷地区的工作犬，所以它拥有非常浓厚的、能抵御各种气候条件的被毛。其萨摩式的微笑，可能正代表此犬的实际性格，即沉稳，优良，性格开朗，对人有亲切感。, <<BLOB>>
+<==        Row: 4, 生病中
+<==        Row: 4, 哈士奇, 俄罗斯西伯利亚地区, 大型, 51-60cm, 长毛, 13-18年, 4, 4, http://127.0.0.1:9090/web/download/167c1fa2ec434c5692fcc472c6a9cfdb.jpeg, 西伯利亚雪撬犬(哈士奇)有许多种类的狗都被称作哈士奇，而通常意义上哈士奇这个词是用来指所有在北方地区的雪橇犬”。哈士奇最初是被北极的土著居民所饲养。据DNA分析，哈士奇是世界上最古老的狗之一, <<BLOB>>
+<==      Total: 4
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 5, 柯基犬, 瑞典, 小型, 31-35cm, 长毛, 12-14年, 4, 3, http://127.0.0.1:9090/web/download/1866ecfbb29d49689d782904d50614cb.jpg, 威尔士柯基犬又称之为威尔士短腿狗，是时下很受欢迎的一个犬种，由于身长腿短长相很萌尤其受到了女生们的喜爱。, <<BLOB>>
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1929f3e3]
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==        Row: 6, 法国斗牛犬, 法国, 小型, 30-31cm, 短毛, 11-12年, 1, 1, http://127.0.0.1:9090/web/download/ae54f6d8d34f47389e118cfc9702e32b.jpeg, 法国斗牛犬(FRENCH BULLDOG)是一种活泼、聪明、肌肉发达的狗，骨骼沉重，被毛平滑、结构紧凑，体型中等或较小。表情显得警惕、好奇而感兴趣。除了切除狼爪以外，对他的任何改动都是错误的，属于失格。 法国斗牛犬亲切，敦厚，忠诚，执著，勇敢，具有独特的品位，而且完全表露于表情与动作。对小孩和善，同时也是作风彪悍，能力强，对于新鲜事物有极强的好奇心的优秀玩具犬。, <<BLOB>>
+<==      Total: 1
+<==        Row: 7, 美国短毛猫, 美国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/1bf9f8207e20445eac5dba7cb9b425da.jpeg, 美国短毛猫素以体格魁伟，骨骼粗壮，肌肉发达，生性聪明，性格温顺著称，是短毛猫类中大型品种。皮毛厚密，毛色多达30种，其中以银色条纹品种最为名贵。, <<BLOB>>
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49b2a002]
+<==        Row: 8, 斯芬克斯猫, 加拿大, 中型, 约50cm, 无毛, 12年, 5, 1, http://127.0.0.1:9090/web/download/dd0f97860b3140d1b6bd894f5a8cfd9b.jpg, 加拿大无毛猫（Canadian Hairless）亦称斯芬克斯猫，是加拿大安大略省多伦多市养猫爱好者在1966年从一窝几乎是无毛的猫仔中，经过近交选育，特意为对猫毛过敏的爱猫者培育成的。这种猫是自然的基因突变产生的宠物猫，除了在耳、口、鼻、尾前段、脚等部位有些又薄又软的胎毛外，其它全身部分均无毛，皮肤多皱有弹性。加拿大无毛猫性情温顺，独立性强，无攻击性，能与其它猫狗相处。, <<BLOB>>
+Creating a new SqlSession
+<==        Row: 9, 布偶猫, 美国, 中型, 约50厘米, 长毛, 10-15年, 3, 3, http://127.0.0.1:9090/web/download/d30307458bda410eaa34922583ac8209.jpeg, 布偶猫又称布拉多尔猫，是猫中体形和体重较大的一种。布偶猫于1960年开始繁育，1965年在美国获得认可。布偶猫头呈V形，眼大而圆，被毛丰厚，四肢粗大，身体柔软，多为三色或双色猫。布偶猫全身非常松弛，像软绵绵的布偶一样。它性格温顺、恬静，对人非常友善，对疼痛的忍受性相当强，常被误认为缺乏疼痛感。它非常能容忍孩子的玩耍，也因此被称为布偶猫，是非常理想的家养宠物。, <<BLOB>>
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a1c26d4] was not registered for synchronization because synchronization is not active
+<==        Row: 10, 中华田园猫, 中国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/f8438cbf40b14597a27a34338159be5f.webp, 中华田园猫中狸花猫原产于中国。 中华田园猫性格活泼，独立，好奇心重，捕鼠能力强。 中华田园猫经常自己清理毛发，并且常掩盖粪便，防止天敌从其粪便气味发现和追踪。中华田园猫为肉食性动物，有昼伏夜出的习性。中华田园猫在早晨和晚上进食；配种时间一般在夜间。, <<BLOB>>
+<==        Row: 11, 中华田园犬, 中国, 中型, 25～55厘米左右, 短毛, 15年, 4, 2, http://127.0.0.1:9090/web/download/f7c30656d29b455ea6657a5e189c9305.webp, 中华田园犬是中国汉族几千年农耕社会背景下的产物，是历史和文化的活化石。随着城市化发展迅速，中华田园犬现在常被当作宠物犬，也广泛用于农村的看家护院和早期的狩猎。作为人类最早驯养的动物之一，中华田园犬至今仍被称作“人类最忠实的朋友”。, <<BLOB>>
+<==      Total: 11
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b4d130e]
+JDBC Connection [HikariProxyConnection@718883905 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM pet WHERE (user_id = ? AND category = ?)
+==> Parameters: 1(Integer), 个人(String)
+<==    Columns: total
+<==        Row: 3
+<==      Total: 1
+==>  Preparing: SELECT id,name,age,sex,health,img,img_list,content,address,time,status,type_id,user_id,category FROM pet WHERE (user_id = ? AND category = ?) ORDER BY id DESC LIMIT ?
+==> Parameters: 1(Integer), 个人(String), 9(Long)
+<==    Columns: id, name, age, sex, health, img, img_list, content, address, time, status, type_id, user_id, category
+<==        Row: 10, 乐豆, 1岁, 公, 2, http://127.0.0.1:9090/web/download/5ba84f09fe1e4afc.jpg, , <<BLOB>>, 天津市/市辖区/河西区, 2025-12-07 15:45:54, 已领养, 1, 1, 个人
+<==        Row: 8, 团团, 6个月, 母, 2, http://127.0.0.1:9090/web/download/61c1e4baa9f5406f.jpg, , <<BLOB>>, 甘肃省/兰州市/安宁区, 2025-12-07 15:26:57, 已领养, 10, 1, 个人
+<==        Row: 7, 小九, 1岁, 母, 2,3, http://127.0.0.1:9090/web/download/63be2096e7c549c0.jpg, , <<BLOB>>, 江苏省/南京市/江宁区, 2025-12-07 15:25:10, 已领养, 7, 1, 个人
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a1c26d4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b754601] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@740249464 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b754601]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17b42c15] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@106968492 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17b42c15]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@417f2213] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2006805165 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@417f2213]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fd24b61] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1852872743 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE (username = ? AND password = ?)
+==> Parameters: admin(String), admin(String)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fd24b61]
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@693faa9e] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2589ff5c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@165955772 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@630475718 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==> Parameters: 1(Integer)
+==> Parameters: 1(Integer)
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@697562c5] was not registered for synchronization because synchronization is not active
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf6914b] was not registered for synchronization because synchronization is not active
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+JDBC Connection [HikariProxyConnection@450541203 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+<==      Total: 1
+Creating a new SqlSession
+<==      Total: 1
+JDBC Connection [HikariProxyConnection@109415378 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2589ff5c]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@595cda07] was not registered for synchronization because synchronization is not active
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@693faa9e]
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==> Parameters: 1(Integer)
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@413546873 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+==> Parameters: 1(Integer)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21cb44b5] was not registered for synchronization because synchronization is not active
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@fac3b0f] was not registered for synchronization because synchronization is not active
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+JDBC Connection [HikariProxyConnection@1272069327 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==> Parameters: 1(Integer)
+<==      Total: 1
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+==>  Preparing: SELECT id,name,user_name,phone,description,address,time,content,user_id,status FROM rescue
+JDBC Connection [HikariProxyConnection@466815806 wrapping com.mysql.cj.jdbc.ConnectionImpl@30d90150] will not be managed by Spring
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@697562c5]
+<==      Total: 1
+==> Parameters: 
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+==>  Preparing: SELECT id,name,age,sex,health,img,img_list,content,address,time,status,type_id,user_id,category FROM pet
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf6914b]
+Creating a new SqlSession
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+==> Parameters: 
+<==    Columns: id, name, user_name, phone, description, address, time, content, user_id, status
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f9a5375] was not registered for synchronization because synchronization is not active
+<==      Total: 1
+Creating a new SqlSession
+<==    Columns: id, name, age, sex, health, img, img_list, content, address, time, status, type_id, user_id, category
+<==        Row: 1, 测试, 测试, 13566667777, 严重皮肤病, 北京市/市辖区/朝阳区, 2025-11-26 00:25:18, <<BLOB>>, 1, 已援助
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@595cda07]
+JDBC Connection [HikariProxyConnection@1832615689 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1db3406] was not registered for synchronization because synchronization is not active
+<==        Row: 1, 橘子, 2个月左右, 公, 1,2, http://127.0.0.1:9090/web/download/526cae2793af448a.jpg, , <<BLOB>>, 上海市/市辖区/徐汇区, 2025-11-23 23:20:32, 待领养, 10, null, 官方
+<==        Row: 2, 测试, 测试123, 123123123123, 自身其他严重疾病, 辽宁省/本溪市/南芬区, 2025-11-26 02:02:55, <<BLOB>>, 2, 已援助
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@1323864511 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+<==        Row: 2, 团团, 5个月左右, 母, 2, http://127.0.0.1:9090/web/download/d6994dd221d3463a.jpg, , <<BLOB>>, 山东省/泰安市/泰山区, 2025-11-23 23:29:14, 待领养, 11, null, 官方
+<==        Row: 3, 小雨求助, 小雨, 167788889999, 动物受困, 重庆市/市辖区/涪陵区, 2025-11-26 02:04:37, <<BLOB>>, 3, 已取消
+<==        Row: 3, 水管, 3个月, 母, 2, http://127.0.0.1:9090/web/download/7f5f36382caf4328.jpg, , <<BLOB>>, 河北省/廊坊市/广阳区, 2025-11-23 23:41:01, 待领养, 10, null, 官方
+==> Parameters: 
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18f0127a] was not registered for synchronization because synchronization is not active
+==>  Preparing: SELECT id,name,address,place,phone,sex,age,house,family,status,user_id,instruction,pet_id,wechat,economy,animal,category,from_id FROM application
+<==        Row: 4, 我希望可以帮我救助一只小狗, 王兰花, 18888888888, 动物受困, 北京市/市辖区/东城区, 2025-12-08 15:45:48, <<BLOB>>, 1, 已取消
+<==        Row: 4, lucky, 4岁, 母, 1,2, http://127.0.0.1:9090/web/download/0d920599ef0f4270.jpg, , <<BLOB>>, 广东省/汕头市/龙湖区, 2025-11-26 01:42:47, 已领养, 1, null, 官方
+JDBC Connection [HikariProxyConnection@667119489 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+==> Parameters: 
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 5, 我看到一堆小猫，希望救助一下, 王兰花, 18888888888, 动物受困, 北京市/市辖区/东城区, 2025-12-09 19:04:44, <<BLOB>>, 1, 已援助
+<==        Row: 5, miumiu, 3岁, 母, 1,2,3, http://127.0.0.1:9090/web/download/bf377aff431f458d.jpg, , <<BLOB>>, 天津市/市辖区/河东区, 2025-11-26 01:45:48, 待领养, 7, null, 官方
+==>  Preparing: SELECT id,name,origin,body,height,hair,lifespan,trainability,shed,img,info,content FROM type
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 5
+<==    Columns: id, name, address, place, phone, sex, age, house, family, status, user_id, instruction, pet_id, wechat, economy, animal, category, from_id
+<==        Row: 1, 王兰花, 北京市/市辖区/朝阳区, 北京市朝阳区北京市朝阳区建国路116号, 178888899999, 女, 28, 普通住宅, 父母退休在家，我在国企上班，比较稳定，短时间没有结婚打算, 已拒绝, 1, 家里之前养过一只小猫，活到了13岁，之后我忙于学业，没有再养，现在我收入稳定，工作稳定，父母也都陆续退休，在家比较空闲，所以想领养一只小猫一起生活。, 1, wx178888899999, 家庭/共同经济, 没有宠物, 官方, null
+<==        Row: 6, 福福, 6个月, 公, 1,2, http://127.0.0.1:9090/web/download/e0da45e8304c4b2b.jpg, , <<BLOB>>, 江苏省/无锡市/惠山区, 2025-11-26 01:51:05, 已领养, 3, null, 官方
+<==        Row: 2, 测试, 河北省/秦皇岛市/卢龙县, 测试, 17899998888, 男, 34, 乡村庭院, 独居, 已拒绝, 2, 还养了一只小土狗, 4, 17899998888, 职业稳定/退休, 有狗, 官方, null
+==> Parameters: 
+<==        Row: 2, 222, 222, 小圆, http://127.0.0.1:9090/web/download/bc3756f98a2c4f48b6c2be23b79b9630.webp, null, null
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21cb44b5]
+<==        Row: 7, 小九, 1岁, 母, 2,3, http://127.0.0.1:9090/web/download/63be2096e7c549c0.jpg, , <<BLOB>>, 江苏省/南京市/江宁区, 2025-12-07 15:25:10, 已领养, 7, 1, 个人
+<==        Row: 3, ces, 天津市/市辖区/河东区, ces, 12345678912, 男, 29, 普通住宅, ces, 已通过, 2, ces, 8, 12121212, 职业稳定/退休, 有猫, 个人, 1
+<==        Row: 3, 333, 333, 小雨, http://127.0.0.1:9090/web/download/1a8df3fe17b44a52849b75acd2fa5e0d.webp, null, null
+<==        Row: 8, 团团, 6个月, 母, 2, http://127.0.0.1:9090/web/download/61c1e4baa9f5406f.jpg, , <<BLOB>>, 甘肃省/兰州市/安宁区, 2025-12-07 15:26:57, 已领养, 10, 1, 个人
+<==    Columns: id, name, origin, body, height, hair, lifespan, trainability, shed, img, info, content
+<==        Row: 4, 1, 北京市/市辖区/东城区, 1, 1, 男, 1, 别墅, 1, 已通过, 1, 1, 6, 1, 无收入, 有猫, 官方, null
+<==      Total: 3
+<==        Row: 5, 1, 北京市/市辖区/东城区, 1, 1, 男, 1, 乡村庭院, 1, 已通过, 2, 1, 7, 1, 职业稳定/退休, 有猫, 个人, 1
+<==        Row: 10, 乐豆, 1岁, 公, 2, http://127.0.0.1:9090/web/download/5ba84f09fe1e4afc.jpg, , <<BLOB>>, 天津市/市辖区/河西区, 2025-12-07 15:45:54, 已领养, 1, 1, 个人
+<==        Row: 1, 泰迪犬, 德国, 小型, 20-38cm, 长毛, 12-19年, 4, 2, http://127.0.0.1:9090/web/download/eb818406b4ad413c86e37e972a0fd6fa.jpeg, 泰迪犬其实是贵宾犬的一种美容方式。贵宾是法国品种，一度被用作猎水鸟，19世纪和20世纪该品种达到其发展的顶峰，用作打猎、表演和陪伴。, <<BLOB>>
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f9a5375]
+<==        Row: 6, xxx, 北京市/市辖区/东城区, xxx, 1, 男, 1, 别墅, 家庭成员, 已通过, 2, 宠物领养, 10, 1, 无收入, 有狗, 个人, 1
+<==      Total: 9
+<==        Row: 2, 西高地犬, 苏格兰, 小型, 25-28cm, 长毛, 12-14年, 4, 4, http://127.0.0.1:9090/web/download/b206f81104ac41bf95ca0b78bf22fcf1.jpeg, 西高地犬是西部高地白梗简称，西部高地白梗原产地英国，产地英国，起源于19世纪。来自苏格兰西部高地的纯白色梗类，在外貌上，脸有点像狐狸，鼻梁比较长。, <<BLOB>>
+<==        Row: 7, 11, 北京市/市辖区/东城区, 11, 11, 男, 11, 别墅, 1, 已通过, 2, 1, 4, 11, 无收入, 有狗, 官方, null
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@fac3b0f]
+<==        Row: 3, 萨摩耶犬, 西伯利亚, 中型, 48-59cm, 长毛, 	12-15年, 3, 4, http://127.0.0.1:9090/web/download/02740b49fafd44ffa95d11fb719ece2c.jpeg, 萨摩耶犬(英文：Samoyed)属于工作犬类，以西伯利亚牧民族萨摩人而命名，以其忍耐力与健壮的体格而闻名，所以欧洲探险家曾使用该犬拉雪橇从事南北极探险工作。机警、有力、非常活泼、高贵而文雅。由于它是在寒冷地区的工作犬，所以它拥有非常浓厚的、能抵御各种气候条件的被毛。其萨摩式的微笑，可能正代表此犬的实际性格，即沉稳，优良，性格开朗，对人有亲切感。, <<BLOB>>
+<==      Total: 7
+<==        Row: 4, 哈士奇, 俄罗斯西伯利亚地区, 大型, 51-60cm, 长毛, 13-18年, 4, 4, http://127.0.0.1:9090/web/download/167c1fa2ec434c5692fcc472c6a9cfdb.jpeg, 西伯利亚雪撬犬(哈士奇)有许多种类的狗都被称作哈士奇，而通常意义上哈士奇这个词是用来指所有在北方地区的雪橇犬”。哈士奇最初是被北极的土著居民所饲养。据DNA分析，哈士奇是世界上最古老的狗之一, <<BLOB>>
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1db3406]
+<==        Row: 5, 柯基犬, 瑞典, 小型, 31-35cm, 长毛, 12-14年, 4, 3, http://127.0.0.1:9090/web/download/1866ecfbb29d49689d782904d50614cb.jpg, 威尔士柯基犬又称之为威尔士短腿狗，是时下很受欢迎的一个犬种，由于身长腿短长相很萌尤其受到了女生们的喜爱。, <<BLOB>>
+<==        Row: 6, 法国斗牛犬, 法国, 小型, 30-31cm, 短毛, 11-12年, 1, 1, http://127.0.0.1:9090/web/download/ae54f6d8d34f47389e118cfc9702e32b.jpeg, 法国斗牛犬(FRENCH BULLDOG)是一种活泼、聪明、肌肉发达的狗，骨骼沉重，被毛平滑、结构紧凑，体型中等或较小。表情显得警惕、好奇而感兴趣。除了切除狼爪以外，对他的任何改动都是错误的，属于失格。 法国斗牛犬亲切，敦厚，忠诚，执著，勇敢，具有独特的品位，而且完全表露于表情与动作。对小孩和善，同时也是作风彪悍，能力强，对于新鲜事物有极强的好奇心的优秀玩具犬。, <<BLOB>>
+Creating a new SqlSession
+<==        Row: 7, 美国短毛猫, 美国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/1bf9f8207e20445eac5dba7cb9b425da.jpeg, 美国短毛猫素以体格魁伟，骨骼粗壮，肌肉发达，生性聪明，性格温顺著称，是短毛猫类中大型品种。皮毛厚密，毛色多达30种，其中以银色条纹品种最为名贵。, <<BLOB>>
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a12b3c7] was not registered for synchronization because synchronization is not active
+<==        Row: 8, 斯芬克斯猫, 加拿大, 中型, 约50cm, 无毛, 12年, 5, 1, http://127.0.0.1:9090/web/download/dd0f97860b3140d1b6bd894f5a8cfd9b.jpg, 加拿大无毛猫（Canadian Hairless）亦称斯芬克斯猫，是加拿大安大略省多伦多市养猫爱好者在1966年从一窝几乎是无毛的猫仔中，经过近交选育，特意为对猫毛过敏的爱猫者培育成的。这种猫是自然的基因突变产生的宠物猫，除了在耳、口、鼻、尾前段、脚等部位有些又薄又软的胎毛外，其它全身部分均无毛，皮肤多皱有弹性。加拿大无毛猫性情温顺，独立性强，无攻击性，能与其它猫狗相处。, <<BLOB>>
+JDBC Connection [HikariProxyConnection@924216999 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+<==        Row: 9, 布偶猫, 美国, 中型, 约50厘米, 长毛, 10-15年, 3, 3, http://127.0.0.1:9090/web/download/d30307458bda410eaa34922583ac8209.jpeg, 布偶猫又称布拉多尔猫，是猫中体形和体重较大的一种。布偶猫于1960年开始繁育，1965年在美国获得认可。布偶猫头呈V形，眼大而圆，被毛丰厚，四肢粗大，身体柔软，多为三色或双色猫。布偶猫全身非常松弛，像软绵绵的布偶一样。它性格温顺、恬静，对人非常友善，对疼痛的忍受性相当强，常被误认为缺乏疼痛感。它非常能容忍孩子的玩耍，也因此被称为布偶猫，是非常理想的家养宠物。, <<BLOB>>
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+Creating a new SqlSession
+<==        Row: 10, 中华田园猫, 中国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/f8438cbf40b14597a27a34338159be5f.webp, 中华田园猫中狸花猫原产于中国。 中华田园猫性格活泼，独立，好奇心重，捕鼠能力强。 中华田园猫经常自己清理毛发，并且常掩盖粪便，防止天敌从其粪便气味发现和追踪。中华田园猫为肉食性动物，有昼伏夜出的习性。中华田园猫在早晨和晚上进食；配种时间一般在夜间。, <<BLOB>>
+==> Parameters: 1(Integer)
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51fc9435] was not registered for synchronization because synchronization is not active
+<==        Row: 11, 中华田园犬, 中国, 中型, 25～55厘米左右, 短毛, 15年, 4, 2, http://127.0.0.1:9090/web/download/f7c30656d29b455ea6657a5e189c9305.webp, 中华田园犬是中国汉族几千年农耕社会背景下的产物，是历史和文化的活化石。随着城市化发展迅速，中华田园犬现在常被当作宠物犬，也广泛用于农村的看家护院和早期的狩猎。作为人类最早驯养的动物之一，中华田园犬至今仍被称作“人类最忠实的朋友”。, <<BLOB>>
+JDBC Connection [HikariProxyConnection@1111111783 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+<==      Total: 11
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18f0127a]
+==> Parameters: 1(Integer)
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+Creating a new SqlSession
+<==      Total: 1
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1166ca4b] was not registered for synchronization because synchronization is not active
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a12b3c7]
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+JDBC Connection [HikariProxyConnection@152926687 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+Creating a new SqlSession
+==>  Preparing: SELECT id,name,age,sex,health,img,img_list,content,address,time,status,type_id,user_id,category FROM pet
+<==      Total: 1
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@203d4b43] was not registered for synchronization because synchronization is not active
+==> Parameters: 
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51fc9435]
+JDBC Connection [HikariProxyConnection@262035464 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT id,name,age,sex,health,img,img_list,content,address,time,status,type_id,user_id,category FROM pet
+<==    Columns: id, name, age, sex, health, img, img_list, content, address, time, status, type_id, user_id, category
+Creating a new SqlSession
+==> Parameters: 
+<==        Row: 1, 橘子, 2个月左右, 公, 1,2, http://127.0.0.1:9090/web/download/526cae2793af448a.jpg, , <<BLOB>>, 上海市/市辖区/徐汇区, 2025-11-23 23:20:32, 待领养, 10, null, 官方
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44533839] was not registered for synchronization because synchronization is not active
+<==        Row: 2, 团团, 5个月左右, 母, 2, http://127.0.0.1:9090/web/download/d6994dd221d3463a.jpg, , <<BLOB>>, 山东省/泰安市/泰山区, 2025-11-23 23:29:14, 待领养, 11, null, 官方
+<==    Columns: id, name, age, sex, health, img, img_list, content, address, time, status, type_id, user_id, category
+<==        Row: 1, 橘子, 2个月左右, 公, 1,2, http://127.0.0.1:9090/web/download/526cae2793af448a.jpg, , <<BLOB>>, 上海市/市辖区/徐汇区, 2025-11-23 23:20:32, 待领养, 10, null, 官方
+<==        Row: 3, 水管, 3个月, 母, 2, http://127.0.0.1:9090/web/download/7f5f36382caf4328.jpg, , <<BLOB>>, 河北省/廊坊市/广阳区, 2025-11-23 23:41:01, 待领养, 10, null, 官方
+JDBC Connection [HikariProxyConnection@1899712954 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+<==        Row: 2, 团团, 5个月左右, 母, 2, http://127.0.0.1:9090/web/download/d6994dd221d3463a.jpg, , <<BLOB>>, 山东省/泰安市/泰山区, 2025-11-23 23:29:14, 待领养, 11, null, 官方
+<==        Row: 4, lucky, 4岁, 母, 1,2, http://127.0.0.1:9090/web/download/0d920599ef0f4270.jpg, , <<BLOB>>, 广东省/汕头市/龙湖区, 2025-11-26 01:42:47, 已领养, 1, null, 官方
+==>  Preparing: SELECT id,name,address,place,phone,sex,age,house,family,status,user_id,instruction,pet_id,wechat,economy,animal,category,from_id FROM application
+<==        Row: 3, 水管, 3个月, 母, 2, http://127.0.0.1:9090/web/download/7f5f36382caf4328.jpg, , <<BLOB>>, 河北省/廊坊市/广阳区, 2025-11-23 23:41:01, 待领养, 10, null, 官方
+<==        Row: 5, miumiu, 3岁, 母, 1,2,3, http://127.0.0.1:9090/web/download/bf377aff431f458d.jpg, , <<BLOB>>, 天津市/市辖区/河东区, 2025-11-26 01:45:48, 待领养, 7, null, 官方
+==> Parameters: 
+<==        Row: 4, lucky, 4岁, 母, 1,2, http://127.0.0.1:9090/web/download/0d920599ef0f4270.jpg, , <<BLOB>>, 广东省/汕头市/龙湖区, 2025-11-26 01:42:47, 已领养, 1, null, 官方
+<==        Row: 6, 福福, 6个月, 公, 1,2, http://127.0.0.1:9090/web/download/e0da45e8304c4b2b.jpg, , <<BLOB>>, 江苏省/无锡市/惠山区, 2025-11-26 01:51:05, 已领养, 3, null, 官方
+<==        Row: 5, miumiu, 3岁, 母, 1,2,3, http://127.0.0.1:9090/web/download/bf377aff431f458d.jpg, , <<BLOB>>, 天津市/市辖区/河东区, 2025-11-26 01:45:48, 待领养, 7, null, 官方
+<==        Row: 7, 小九, 1岁, 母, 2,3, http://127.0.0.1:9090/web/download/63be2096e7c549c0.jpg, , <<BLOB>>, 江苏省/南京市/江宁区, 2025-12-07 15:25:10, 已领养, 7, 1, 个人
+<==        Row: 6, 福福, 6个月, 公, 1,2, http://127.0.0.1:9090/web/download/e0da45e8304c4b2b.jpg, , <<BLOB>>, 江苏省/无锡市/惠山区, 2025-11-26 01:51:05, 已领养, 3, null, 官方
+<==    Columns: id, name, address, place, phone, sex, age, house, family, status, user_id, instruction, pet_id, wechat, economy, animal, category, from_id
+<==        Row: 8, 团团, 6个月, 母, 2, http://127.0.0.1:9090/web/download/61c1e4baa9f5406f.jpg, , <<BLOB>>, 甘肃省/兰州市/安宁区, 2025-12-07 15:26:57, 已领养, 10, 1, 个人
+<==        Row: 7, 小九, 1岁, 母, 2,3, http://127.0.0.1:9090/web/download/63be2096e7c549c0.jpg, , <<BLOB>>, 江苏省/南京市/江宁区, 2025-12-07 15:25:10, 已领养, 7, 1, 个人
+<==        Row: 1, 王兰花, 北京市/市辖区/朝阳区, 北京市朝阳区北京市朝阳区建国路116号, 178888899999, 女, 28, 普通住宅, 父母退休在家，我在国企上班，比较稳定，短时间没有结婚打算, 已拒绝, 1, 家里之前养过一只小猫，活到了13岁，之后我忙于学业，没有再养，现在我收入稳定，工作稳定，父母也都陆续退休，在家比较空闲，所以想领养一只小猫一起生活。, 1, wx178888899999, 家庭/共同经济, 没有宠物, 官方, null
+<==        Row: 10, 乐豆, 1岁, 公, 2, http://127.0.0.1:9090/web/download/5ba84f09fe1e4afc.jpg, , <<BLOB>>, 天津市/市辖区/河西区, 2025-12-07 15:45:54, 已领养, 1, 1, 个人
+<==        Row: 8, 团团, 6个月, 母, 2, http://127.0.0.1:9090/web/download/61c1e4baa9f5406f.jpg, , <<BLOB>>, 甘肃省/兰州市/安宁区, 2025-12-07 15:26:57, 已领养, 10, 1, 个人
+<==        Row: 2, 测试, 河北省/秦皇岛市/卢龙县, 测试, 17899998888, 男, 34, 乡村庭院, 独居, 已拒绝, 2, 还养了一只小土狗, 4, 17899998888, 职业稳定/退休, 有狗, 官方, null
+<==      Total: 9
+<==        Row: 10, 乐豆, 1岁, 公, 2, http://127.0.0.1:9090/web/download/5ba84f09fe1e4afc.jpg, , <<BLOB>>, 天津市/市辖区/河西区, 2025-12-07 15:45:54, 已领养, 1, 1, 个人
+<==        Row: 3, ces, 天津市/市辖区/河东区, ces, 12345678912, 男, 29, 普通住宅, ces, 已通过, 2, ces, 8, 12121212, 职业稳定/退休, 有猫, 个人, 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1166ca4b]
+<==      Total: 9
+<==        Row: 4, 1, 北京市/市辖区/东城区, 1, 1, 男, 1, 别墅, 1, 已通过, 1, 1, 6, 1, 无收入, 有猫, 官方, null
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@203d4b43]
+<==        Row: 5, 1, 北京市/市辖区/东城区, 1, 1, 男, 1, 乡村庭院, 1, 已通过, 2, 1, 7, 1, 职业稳定/退休, 有猫, 个人, 1
+<==        Row: 6, xxx, 北京市/市辖区/东城区, xxx, 1, 男, 1, 别墅, 家庭成员, 已通过, 2, 宠物领养, 10, 1, 无收入, 有狗, 个人, 1
+<==        Row: 7, 11, 北京市/市辖区/东城区, 11, 11, 男, 11, 别墅, 1, 已通过, 2, 1, 4, 11, 无收入, 有狗, 官方, null
+<==      Total: 7
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44533839]
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b87649b] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3637b25c] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3881f136] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c70fdcb] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53e215ba] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1295484828 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@241201459 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1133835391 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1905002187 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+JDBC Connection [HikariProxyConnection@1357606403 wrapping com.mysql.cj.jdbc.ConnectionImpl@30d90150] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==> Parameters: 1(Integer)
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==> Parameters: 1(Integer)
+==> Parameters: 1(Integer)
+==> Parameters: 1(Integer)
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==      Total: 1
+<==      Total: 1
+<==      Total: 1
+<==      Total: 1
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3637b25c]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b87649b]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c70fdcb]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3881f136]
+<==      Total: 1
+Creating a new SqlSession
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53e215ba]
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dc95e75] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29756465] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3400c482] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d8484c6] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@546e8ce3] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1449636546 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@508176444 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1058404716 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@234324049 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@392301585 wrapping com.mysql.cj.jdbc.ConnectionImpl@30d90150] will not be managed by Spring
+==>  Preparing: SELECT id,name,user_name,phone,description,address,time,content,user_id,status FROM rescue
+==>  Preparing: SELECT id,name,address,place,phone,sex,age,house,family,status,user_id,instruction,pet_id,wechat,economy,animal,category,from_id FROM application
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user
+==>  Preparing: SELECT id,name,age,sex,health,img,img_list,content,address,time,status,type_id,user_id,category FROM pet
+==>  Preparing: SELECT id,name,origin,body,height,hair,lifespan,trainability,shed,img,info,content FROM type
+==> Parameters: 
+==> Parameters: 
+==> Parameters: 
+==> Parameters: 
+==> Parameters: 
+<==    Columns: id, name, user_name, phone, description, address, time, content, user_id, status
+<==        Row: 1, 测试, 测试, 13566667777, 严重皮肤病, 北京市/市辖区/朝阳区, 2025-11-26 00:25:18, <<BLOB>>, 1, 已援助
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==    Columns: id, name, address, place, phone, sex, age, house, family, status, user_id, instruction, pet_id, wechat, economy, animal, category, from_id
+<==    Columns: id, name, age, sex, health, img, img_list, content, address, time, status, type_id, user_id, category
+<==        Row: 2, 测试, 测试123, 123123123123, 自身其他严重疾病, 辽宁省/本溪市/南芬区, 2025-11-26 02:02:55, <<BLOB>>, 2, 已援助
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==    Columns: id, name, origin, body, height, hair, lifespan, trainability, shed, img, info, content
+<==        Row: 1, 王兰花, 北京市/市辖区/朝阳区, 北京市朝阳区北京市朝阳区建国路116号, 178888899999, 女, 28, 普通住宅, 父母退休在家，我在国企上班，比较稳定，短时间没有结婚打算, 已拒绝, 1, 家里之前养过一只小猫，活到了13岁，之后我忙于学业，没有再养，现在我收入稳定，工作稳定，父母也都陆续退休，在家比较空闲，所以想领养一只小猫一起生活。, 1, wx178888899999, 家庭/共同经济, 没有宠物, 官方, null
+<==        Row: 1, 橘子, 2个月左右, 公, 1,2, http://127.0.0.1:9090/web/download/526cae2793af448a.jpg, , <<BLOB>>, 上海市/市辖区/徐汇区, 2025-11-23 23:20:32, 待领养, 10, null, 官方
+<==        Row: 3, 小雨求助, 小雨, 167788889999, 动物受困, 重庆市/市辖区/涪陵区, 2025-11-26 02:04:37, <<BLOB>>, 3, 已取消
+<==        Row: 2, 222, 222, 小圆, http://127.0.0.1:9090/web/download/bc3756f98a2c4f48b6c2be23b79b9630.webp, null, null
+<==        Row: 1, 泰迪犬, 德国, 小型, 20-38cm, 长毛, 12-19年, 4, 2, http://127.0.0.1:9090/web/download/eb818406b4ad413c86e37e972a0fd6fa.jpeg, 泰迪犬其实是贵宾犬的一种美容方式。贵宾是法国品种，一度被用作猎水鸟，19世纪和20世纪该品种达到其发展的顶峰，用作打猎、表演和陪伴。, <<BLOB>>
+<==        Row: 2, 测试, 河北省/秦皇岛市/卢龙县, 测试, 17899998888, 男, 34, 乡村庭院, 独居, 已拒绝, 2, 还养了一只小土狗, 4, 17899998888, 职业稳定/退休, 有狗, 官方, null
+<==        Row: 2, 团团, 5个月左右, 母, 2, http://127.0.0.1:9090/web/download/d6994dd221d3463a.jpg, , <<BLOB>>, 山东省/泰安市/泰山区, 2025-11-23 23:29:14, 待领养, 11, null, 官方
+<==        Row: 4, 我希望可以帮我救助一只小狗, 王兰花, 18888888888, 动物受困, 北京市/市辖区/东城区, 2025-12-08 15:45:48, <<BLOB>>, 1, 已取消
+<==        Row: 3, 333, 333, 小雨, http://127.0.0.1:9090/web/download/1a8df3fe17b44a52849b75acd2fa5e0d.webp, null, null
+<==        Row: 2, 西高地犬, 苏格兰, 小型, 25-28cm, 长毛, 12-14年, 4, 4, http://127.0.0.1:9090/web/download/b206f81104ac41bf95ca0b78bf22fcf1.jpeg, 西高地犬是西部高地白梗简称，西部高地白梗原产地英国，产地英国，起源于19世纪。来自苏格兰西部高地的纯白色梗类，在外貌上，脸有点像狐狸，鼻梁比较长。, <<BLOB>>
+<==        Row: 3, ces, 天津市/市辖区/河东区, ces, 12345678912, 男, 29, 普通住宅, ces, 已通过, 2, ces, 8, 12121212, 职业稳定/退休, 有猫, 个人, 1
+<==        Row: 3, 水管, 3个月, 母, 2, http://127.0.0.1:9090/web/download/7f5f36382caf4328.jpg, , <<BLOB>>, 河北省/廊坊市/广阳区, 2025-11-23 23:41:01, 待领养, 10, null, 官方
+<==        Row: 5, 我看到一堆小猫，希望救助一下, 王兰花, 18888888888, 动物受困, 北京市/市辖区/东城区, 2025-12-09 19:04:44, <<BLOB>>, 1, 已援助
+<==      Total: 3
+<==        Row: 3, 萨摩耶犬, 西伯利亚, 中型, 48-59cm, 长毛, 	12-15年, 3, 4, http://127.0.0.1:9090/web/download/02740b49fafd44ffa95d11fb719ece2c.jpeg, 萨摩耶犬(英文：Samoyed)属于工作犬类，以西伯利亚牧民族萨摩人而命名，以其忍耐力与健壮的体格而闻名，所以欧洲探险家曾使用该犬拉雪橇从事南北极探险工作。机警、有力、非常活泼、高贵而文雅。由于它是在寒冷地区的工作犬，所以它拥有非常浓厚的、能抵御各种气候条件的被毛。其萨摩式的微笑，可能正代表此犬的实际性格，即沉稳，优良，性格开朗，对人有亲切感。, <<BLOB>>
+<==        Row: 4, 1, 北京市/市辖区/东城区, 1, 1, 男, 1, 别墅, 1, 已通过, 1, 1, 6, 1, 无收入, 有猫, 官方, null
+<==        Row: 4, lucky, 4岁, 母, 1,2, http://127.0.0.1:9090/web/download/0d920599ef0f4270.jpg, , <<BLOB>>, 广东省/汕头市/龙湖区, 2025-11-26 01:42:47, 已领养, 1, null, 官方
+<==      Total: 5
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3400c482]
+<==        Row: 4, 哈士奇, 俄罗斯西伯利亚地区, 大型, 51-60cm, 长毛, 13-18年, 4, 4, http://127.0.0.1:9090/web/download/167c1fa2ec434c5692fcc472c6a9cfdb.jpeg, 西伯利亚雪撬犬(哈士奇)有许多种类的狗都被称作哈士奇，而通常意义上哈士奇这个词是用来指所有在北方地区的雪橇犬”。哈士奇最初是被北极的土著居民所饲养。据DNA分析，哈士奇是世界上最古老的狗之一, <<BLOB>>
+<==        Row: 5, 1, 北京市/市辖区/东城区, 1, 1, 男, 1, 乡村庭院, 1, 已通过, 2, 1, 7, 1, 职业稳定/退休, 有猫, 个人, 1
+<==        Row: 5, miumiu, 3岁, 母, 1,2,3, http://127.0.0.1:9090/web/download/bf377aff431f458d.jpg, , <<BLOB>>, 天津市/市辖区/河东区, 2025-11-26 01:45:48, 待领养, 7, null, 官方
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dc95e75]
+<==        Row: 5, 柯基犬, 瑞典, 小型, 31-35cm, 长毛, 12-14年, 4, 3, http://127.0.0.1:9090/web/download/1866ecfbb29d49689d782904d50614cb.jpg, 威尔士柯基犬又称之为威尔士短腿狗，是时下很受欢迎的一个犬种，由于身长腿短长相很萌尤其受到了女生们的喜爱。, <<BLOB>>
+<==        Row: 6, xxx, 北京市/市辖区/东城区, xxx, 1, 男, 1, 别墅, 家庭成员, 已通过, 2, 宠物领养, 10, 1, 无收入, 有狗, 个人, 1
+<==        Row: 6, 福福, 6个月, 公, 1,2, http://127.0.0.1:9090/web/download/e0da45e8304c4b2b.jpg, , <<BLOB>>, 江苏省/无锡市/惠山区, 2025-11-26 01:51:05, 已领养, 3, null, 官方
+<==        Row: 6, 法国斗牛犬, 法国, 小型, 30-31cm, 短毛, 11-12年, 1, 1, http://127.0.0.1:9090/web/download/ae54f6d8d34f47389e118cfc9702e32b.jpeg, 法国斗牛犬(FRENCH BULLDOG)是一种活泼、聪明、肌肉发达的狗，骨骼沉重，被毛平滑、结构紧凑，体型中等或较小。表情显得警惕、好奇而感兴趣。除了切除狼爪以外，对他的任何改动都是错误的，属于失格。 法国斗牛犬亲切，敦厚，忠诚，执著，勇敢，具有独特的品位，而且完全表露于表情与动作。对小孩和善，同时也是作风彪悍，能力强，对于新鲜事物有极强的好奇心的优秀玩具犬。, <<BLOB>>
+<==        Row: 7, 11, 北京市/市辖区/东城区, 11, 11, 男, 11, 别墅, 1, 已通过, 2, 1, 4, 11, 无收入, 有狗, 官方, null
+<==        Row: 7, 小九, 1岁, 母, 2,3, http://127.0.0.1:9090/web/download/63be2096e7c549c0.jpg, , <<BLOB>>, 江苏省/南京市/江宁区, 2025-12-07 15:25:10, 已领养, 7, 1, 个人
+<==        Row: 7, 美国短毛猫, 美国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/1bf9f8207e20445eac5dba7cb9b425da.jpeg, 美国短毛猫素以体格魁伟，骨骼粗壮，肌肉发达，生性聪明，性格温顺著称，是短毛猫类中大型品种。皮毛厚密，毛色多达30种，其中以银色条纹品种最为名贵。, <<BLOB>>
+<==      Total: 7
+<==        Row: 8, 团团, 6个月, 母, 2, http://127.0.0.1:9090/web/download/61c1e4baa9f5406f.jpg, , <<BLOB>>, 甘肃省/兰州市/安宁区, 2025-12-07 15:26:57, 已领养, 10, 1, 个人
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29756465]
+<==        Row: 8, 斯芬克斯猫, 加拿大, 中型, 约50cm, 无毛, 12年, 5, 1, http://127.0.0.1:9090/web/download/dd0f97860b3140d1b6bd894f5a8cfd9b.jpg, 加拿大无毛猫（Canadian Hairless）亦称斯芬克斯猫，是加拿大安大略省多伦多市养猫爱好者在1966年从一窝几乎是无毛的猫仔中，经过近交选育，特意为对猫毛过敏的爱猫者培育成的。这种猫是自然的基因突变产生的宠物猫，除了在耳、口、鼻、尾前段、脚等部位有些又薄又软的胎毛外，其它全身部分均无毛，皮肤多皱有弹性。加拿大无毛猫性情温顺，独立性强，无攻击性，能与其它猫狗相处。, <<BLOB>>
+<==        Row: 10, 乐豆, 1岁, 公, 2, http://127.0.0.1:9090/web/download/5ba84f09fe1e4afc.jpg, , <<BLOB>>, 天津市/市辖区/河西区, 2025-12-07 15:45:54, 已领养, 1, 1, 个人
+<==        Row: 9, 布偶猫, 美国, 中型, 约50厘米, 长毛, 10-15年, 3, 3, http://127.0.0.1:9090/web/download/d30307458bda410eaa34922583ac8209.jpeg, 布偶猫又称布拉多尔猫，是猫中体形和体重较大的一种。布偶猫于1960年开始繁育，1965年在美国获得认可。布偶猫头呈V形，眼大而圆，被毛丰厚，四肢粗大，身体柔软，多为三色或双色猫。布偶猫全身非常松弛，像软绵绵的布偶一样。它性格温顺、恬静，对人非常友善，对疼痛的忍受性相当强，常被误认为缺乏疼痛感。它非常能容忍孩子的玩耍，也因此被称为布偶猫，是非常理想的家养宠物。, <<BLOB>>
+<==      Total: 9
+<==        Row: 10, 中华田园猫, 中国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/f8438cbf40b14597a27a34338159be5f.webp, 中华田园猫中狸花猫原产于中国。 中华田园猫性格活泼，独立，好奇心重，捕鼠能力强。 中华田园猫经常自己清理毛发，并且常掩盖粪便，防止天敌从其粪便气味发现和追踪。中华田园猫为肉食性动物，有昼伏夜出的习性。中华田园猫在早晨和晚上进食；配种时间一般在夜间。, <<BLOB>>
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d8484c6]
+<==        Row: 11, 中华田园犬, 中国, 中型, 25～55厘米左右, 短毛, 15年, 4, 2, http://127.0.0.1:9090/web/download/f7c30656d29b455ea6657a5e189c9305.webp, 中华田园犬是中国汉族几千年农耕社会背景下的产物，是历史和文化的活化石。随着城市化发展迅速，中华田园犬现在常被当作宠物犬，也广泛用于农村的看家护院和早期的狩猎。作为人类最早驯养的动物之一，中华田园犬至今仍被称作“人类最忠实的朋友”。, <<BLOB>>
+<==      Total: 11
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@546e8ce3]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35add897] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d889ed7] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@360989525 wrapping com.mysql.cj.jdbc.ConnectionImpl@30d90150] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1168892516 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+Creating a new SqlSession
+==>  Preparing: SELECT id,name,age,sex,health,img,img_list,content,address,time,status,type_id,user_id,category FROM pet
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d4c17ce] was not registered for synchronization because synchronization is not active
+==> Parameters: 
+==> Parameters: 1(Integer)
+JDBC Connection [HikariProxyConnection@2002855031 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+<==    Columns: id, name, age, sex, health, img, img_list, content, address, time, status, type_id, user_id, category
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 橘子, 2个月左右, 公, 1,2, http://127.0.0.1:9090/web/download/526cae2793af448a.jpg, , <<BLOB>>, 上海市/市辖区/徐汇区, 2025-11-23 23:20:32, 待领养, 10, null, 官方
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+==> Parameters: 1(Integer)
+<==        Row: 2, 团团, 5个月左右, 母, 2, http://127.0.0.1:9090/web/download/d6994dd221d3463a.jpg, , <<BLOB>>, 山东省/泰安市/泰山区, 2025-11-23 23:29:14, 待领养, 11, null, 官方
+<==      Total: 1
+<==        Row: 3, 水管, 3个月, 母, 2, http://127.0.0.1:9090/web/download/7f5f36382caf4328.jpg, , <<BLOB>>, 河北省/廊坊市/广阳区, 2025-11-23 23:41:01, 待领养, 10, null, 官方
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d889ed7]
+<==        Row: 4, lucky, 4岁, 母, 1,2, http://127.0.0.1:9090/web/download/0d920599ef0f4270.jpg, , <<BLOB>>, 广东省/汕头市/龙湖区, 2025-11-26 01:42:47, 已领养, 1, null, 官方
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+Creating a new SqlSession
+<==        Row: 5, miumiu, 3岁, 母, 1,2,3, http://127.0.0.1:9090/web/download/bf377aff431f458d.jpg, , <<BLOB>>, 天津市/市辖区/河东区, 2025-11-26 01:45:48, 待领养, 7, null, 官方
+<==      Total: 1
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61363354] was not registered for synchronization because synchronization is not active
+<==        Row: 6, 福福, 6个月, 公, 1,2, http://127.0.0.1:9090/web/download/e0da45e8304c4b2b.jpg, , <<BLOB>>, 江苏省/无锡市/惠山区, 2025-11-26 01:51:05, 已领养, 3, null, 官方
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d4c17ce]
+JDBC Connection [HikariProxyConnection@940664707 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+<==        Row: 7, 小九, 1岁, 母, 2,3, http://127.0.0.1:9090/web/download/63be2096e7c549c0.jpg, , <<BLOB>>, 江苏省/南京市/江宁区, 2025-12-07 15:25:10, 已领养, 7, 1, 个人
+==>  Preparing: SELECT id,name,address,place,phone,sex,age,house,family,status,user_id,instruction,pet_id,wechat,economy,animal,category,from_id FROM application
+Creating a new SqlSession
+==> Parameters: 
+<==        Row: 8, 团团, 6个月, 母, 2, http://127.0.0.1:9090/web/download/61c1e4baa9f5406f.jpg, , <<BLOB>>, 甘肃省/兰州市/安宁区, 2025-12-07 15:26:57, 已领养, 10, 1, 个人
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a1bd8e5] was not registered for synchronization because synchronization is not active
+<==        Row: 10, 乐豆, 1岁, 公, 2, http://127.0.0.1:9090/web/download/5ba84f09fe1e4afc.jpg, , <<BLOB>>, 天津市/市辖区/河西区, 2025-12-07 15:45:54, 已领养, 1, 1, 个人
+JDBC Connection [HikariProxyConnection@397693967 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+<==      Total: 9
+<==    Columns: id, name, address, place, phone, sex, age, house, family, status, user_id, instruction, pet_id, wechat, economy, animal, category, from_id
+==>  Preparing: SELECT id,name,age,sex,health,img,img_list,content,address,time,status,type_id,user_id,category FROM pet
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35add897]
+==> Parameters: 
+<==        Row: 1, 王兰花, 北京市/市辖区/朝阳区, 北京市朝阳区北京市朝阳区建国路116号, 178888899999, 女, 28, 普通住宅, 父母退休在家，我在国企上班，比较稳定，短时间没有结婚打算, 已拒绝, 1, 家里之前养过一只小猫，活到了13岁，之后我忙于学业，没有再养，现在我收入稳定，工作稳定，父母也都陆续退休，在家比较空闲，所以想领养一只小猫一起生活。, 1, wx178888899999, 家庭/共同经济, 没有宠物, 官方, null
+<==        Row: 2, 测试, 河北省/秦皇岛市/卢龙县, 测试, 17899998888, 男, 34, 乡村庭院, 独居, 已拒绝, 2, 还养了一只小土狗, 4, 17899998888, 职业稳定/退休, 有狗, 官方, null
+<==    Columns: id, name, age, sex, health, img, img_list, content, address, time, status, type_id, user_id, category
+<==        Row: 3, ces, 天津市/市辖区/河东区, ces, 12345678912, 男, 29, 普通住宅, ces, 已通过, 2, ces, 8, 12121212, 职业稳定/退休, 有猫, 个人, 1
+<==        Row: 1, 橘子, 2个月左右, 公, 1,2, http://127.0.0.1:9090/web/download/526cae2793af448a.jpg, , <<BLOB>>, 上海市/市辖区/徐汇区, 2025-11-23 23:20:32, 待领养, 10, null, 官方
+<==        Row: 4, 1, 北京市/市辖区/东城区, 1, 1, 男, 1, 别墅, 1, 已通过, 1, 1, 6, 1, 无收入, 有猫, 官方, null
+<==        Row: 2, 团团, 5个月左右, 母, 2, http://127.0.0.1:9090/web/download/d6994dd221d3463a.jpg, , <<BLOB>>, 山东省/泰安市/泰山区, 2025-11-23 23:29:14, 待领养, 11, null, 官方
+<==        Row: 3, 水管, 3个月, 母, 2, http://127.0.0.1:9090/web/download/7f5f36382caf4328.jpg, , <<BLOB>>, 河北省/廊坊市/广阳区, 2025-11-23 23:41:01, 待领养, 10, null, 官方
+<==        Row: 5, 1, 北京市/市辖区/东城区, 1, 1, 男, 1, 乡村庭院, 1, 已通过, 2, 1, 7, 1, 职业稳定/退休, 有猫, 个人, 1
+<==        Row: 4, lucky, 4岁, 母, 1,2, http://127.0.0.1:9090/web/download/0d920599ef0f4270.jpg, , <<BLOB>>, 广东省/汕头市/龙湖区, 2025-11-26 01:42:47, 已领养, 1, null, 官方
+<==        Row: 6, xxx, 北京市/市辖区/东城区, xxx, 1, 男, 1, 别墅, 家庭成员, 已通过, 2, 宠物领养, 10, 1, 无收入, 有狗, 个人, 1
+<==        Row: 5, miumiu, 3岁, 母, 1,2,3, http://127.0.0.1:9090/web/download/bf377aff431f458d.jpg, , <<BLOB>>, 天津市/市辖区/河东区, 2025-11-26 01:45:48, 待领养, 7, null, 官方
+<==        Row: 7, 11, 北京市/市辖区/东城区, 11, 11, 男, 11, 别墅, 1, 已通过, 2, 1, 4, 11, 无收入, 有狗, 官方, null
+<==        Row: 6, 福福, 6个月, 公, 1,2, http://127.0.0.1:9090/web/download/e0da45e8304c4b2b.jpg, , <<BLOB>>, 江苏省/无锡市/惠山区, 2025-11-26 01:51:05, 已领养, 3, null, 官方
+<==      Total: 7
+<==        Row: 7, 小九, 1岁, 母, 2,3, http://127.0.0.1:9090/web/download/63be2096e7c549c0.jpg, , <<BLOB>>, 江苏省/南京市/江宁区, 2025-12-07 15:25:10, 已领养, 7, 1, 个人
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61363354]
+<==        Row: 8, 团团, 6个月, 母, 2, http://127.0.0.1:9090/web/download/61c1e4baa9f5406f.jpg, , <<BLOB>>, 甘肃省/兰州市/安宁区, 2025-12-07 15:26:57, 已领养, 10, 1, 个人
+<==        Row: 10, 乐豆, 1岁, 公, 2, http://127.0.0.1:9090/web/download/5ba84f09fe1e4afc.jpg, , <<BLOB>>, 天津市/市辖区/河西区, 2025-12-07 15:45:54, 已领养, 1, 1, 个人
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a1bd8e5]
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b900e27] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2629dcd4] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@1679137991 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@339683399 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6cd26fce] was not registered for synchronization because synchronization is not active
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+JDBC Connection [HikariProxyConnection@2071965399 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==> Parameters: 1(Integer)
+==> Parameters: 1(Integer)
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==      Total: 1
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b900e27]
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2629dcd4]
+<==      Total: 1
+Creating a new SqlSession
+Creating a new SqlSession
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6cd26fce]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69de88f2] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a41d162] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@845431512 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@853965186 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+==>  Preparing: SELECT id,name FROM health
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29351415] was not registered for synchronization because synchronization is not active
+==>  Preparing: SELECT id,name,origin,body,height,hair,lifespan,trainability,shed,img,info,content FROM type
+==> Parameters: 
+==> Parameters: 
+<==    Columns: id, name
+<==    Columns: id, name, origin, body, height, hair, lifespan, trainability, shed, img, info, content
+<==        Row: 1, 已免疫
+<==        Row: 1, 泰迪犬, 德国, 小型, 20-38cm, 长毛, 12-19年, 4, 2, http://127.0.0.1:9090/web/download/eb818406b4ad413c86e37e972a0fd6fa.jpeg, 泰迪犬其实是贵宾犬的一种美容方式。贵宾是法国品种，一度被用作猎水鸟，19世纪和20世纪该品种达到其发展的顶峰，用作打猎、表演和陪伴。, <<BLOB>>
+JDBC Connection [HikariProxyConnection@276191983 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+<==        Row: 2, 西高地犬, 苏格兰, 小型, 25-28cm, 长毛, 12-14年, 4, 4, http://127.0.0.1:9090/web/download/b206f81104ac41bf95ca0b78bf22fcf1.jpeg, 西高地犬是西部高地白梗简称，西部高地白梗原产地英国，产地英国，起源于19世纪。来自苏格兰西部高地的纯白色梗类，在外貌上，脸有点像狐狸，鼻梁比较长。, <<BLOB>>
+<==        Row: 2, 已驱虫
+==>  Preparing: SELECT COUNT(*) AS total FROM pet
+<==        Row: 3, 萨摩耶犬, 西伯利亚, 中型, 48-59cm, 长毛, 	12-15年, 3, 4, http://127.0.0.1:9090/web/download/02740b49fafd44ffa95d11fb719ece2c.jpeg, 萨摩耶犬(英文：Samoyed)属于工作犬类，以西伯利亚牧民族萨摩人而命名，以其忍耐力与健壮的体格而闻名，所以欧洲探险家曾使用该犬拉雪橇从事南北极探险工作。机警、有力、非常活泼、高贵而文雅。由于它是在寒冷地区的工作犬，所以它拥有非常浓厚的、能抵御各种气候条件的被毛。其萨摩式的微笑，可能正代表此犬的实际性格，即沉稳，优良，性格开朗，对人有亲切感。, <<BLOB>>
+<==        Row: 3, 已绝育
+==> Parameters: 
+<==        Row: 4, 哈士奇, 俄罗斯西伯利亚地区, 大型, 51-60cm, 长毛, 13-18年, 4, 4, http://127.0.0.1:9090/web/download/167c1fa2ec434c5692fcc472c6a9cfdb.jpeg, 西伯利亚雪撬犬(哈士奇)有许多种类的狗都被称作哈士奇，而通常意义上哈士奇这个词是用来指所有在北方地区的雪橇犬”。哈士奇最初是被北极的土著居民所饲养。据DNA分析，哈士奇是世界上最古老的狗之一, <<BLOB>>
+<==        Row: 4, 生病中
+<==        Row: 5, 柯基犬, 瑞典, 小型, 31-35cm, 长毛, 12-14年, 4, 3, http://127.0.0.1:9090/web/download/1866ecfbb29d49689d782904d50614cb.jpg, 威尔士柯基犬又称之为威尔士短腿狗，是时下很受欢迎的一个犬种，由于身长腿短长相很萌尤其受到了女生们的喜爱。, <<BLOB>>
+<==      Total: 4
+<==        Row: 6, 法国斗牛犬, 法国, 小型, 30-31cm, 短毛, 11-12年, 1, 1, http://127.0.0.1:9090/web/download/ae54f6d8d34f47389e118cfc9702e32b.jpeg, 法国斗牛犬(FRENCH BULLDOG)是一种活泼、聪明、肌肉发达的狗，骨骼沉重，被毛平滑、结构紧凑，体型中等或较小。表情显得警惕、好奇而感兴趣。除了切除狼爪以外，对他的任何改动都是错误的，属于失格。 法国斗牛犬亲切，敦厚，忠诚，执著，勇敢，具有独特的品位，而且完全表露于表情与动作。对小孩和善，同时也是作风彪悍，能力强，对于新鲜事物有极强的好奇心的优秀玩具犬。, <<BLOB>>
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69de88f2]
+<==        Row: 7, 美国短毛猫, 美国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/1bf9f8207e20445eac5dba7cb9b425da.jpeg, 美国短毛猫素以体格魁伟，骨骼粗壮，肌肉发达，生性聪明，性格温顺著称，是短毛猫类中大型品种。皮毛厚密，毛色多达30种，其中以银色条纹品种最为名贵。, <<BLOB>>
+<==        Row: 8, 斯芬克斯猫, 加拿大, 中型, 约50cm, 无毛, 12年, 5, 1, http://127.0.0.1:9090/web/download/dd0f97860b3140d1b6bd894f5a8cfd9b.jpg, 加拿大无毛猫（Canadian Hairless）亦称斯芬克斯猫，是加拿大安大略省多伦多市养猫爱好者在1966年从一窝几乎是无毛的猫仔中，经过近交选育，特意为对猫毛过敏的爱猫者培育成的。这种猫是自然的基因突变产生的宠物猫，除了在耳、口、鼻、尾前段、脚等部位有些又薄又软的胎毛外，其它全身部分均无毛，皮肤多皱有弹性。加拿大无毛猫性情温顺，独立性强，无攻击性，能与其它猫狗相处。, <<BLOB>>
+<==    Columns: total
+<==        Row: 9
+<==        Row: 9, 布偶猫, 美国, 中型, 约50厘米, 长毛, 10-15年, 3, 3, http://127.0.0.1:9090/web/download/d30307458bda410eaa34922583ac8209.jpeg, 布偶猫又称布拉多尔猫，是猫中体形和体重较大的一种。布偶猫于1960年开始繁育，1965年在美国获得认可。布偶猫头呈V形，眼大而圆，被毛丰厚，四肢粗大，身体柔软，多为三色或双色猫。布偶猫全身非常松弛，像软绵绵的布偶一样。它性格温顺、恬静，对人非常友善，对疼痛的忍受性相当强，常被误认为缺乏疼痛感。它非常能容忍孩子的玩耍，也因此被称为布偶猫，是非常理想的家养宠物。, <<BLOB>>
+<==      Total: 1
+<==        Row: 10, 中华田园猫, 中国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/f8438cbf40b14597a27a34338159be5f.webp, 中华田园猫中狸花猫原产于中国。 中华田园猫性格活泼，独立，好奇心重，捕鼠能力强。 中华田园猫经常自己清理毛发，并且常掩盖粪便，防止天敌从其粪便气味发现和追踪。中华田园猫为肉食性动物，有昼伏夜出的习性。中华田园猫在早晨和晚上进食；配种时间一般在夜间。, <<BLOB>>
+==>  Preparing: SELECT id,name,age,sex,health,img,img_list,content,address,time,status,type_id,user_id,category FROM pet ORDER BY id DESC LIMIT ?
+<==        Row: 11, 中华田园犬, 中国, 中型, 25～55厘米左右, 短毛, 15年, 4, 2, http://127.0.0.1:9090/web/download/f7c30656d29b455ea6657a5e189c9305.webp, 中华田园犬是中国汉族几千年农耕社会背景下的产物，是历史和文化的活化石。随着城市化发展迅速，中华田园犬现在常被当作宠物犬，也广泛用于农村的看家护院和早期的狩猎。作为人类最早驯养的动物之一，中华田园犬至今仍被称作“人类最忠实的朋友”。, <<BLOB>>
+==> Parameters: 10(Long)
+<==      Total: 11
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a41d162]
+<==    Columns: id, name, age, sex, health, img, img_list, content, address, time, status, type_id, user_id, category
+<==        Row: 10, 乐豆, 1岁, 公, 2, http://127.0.0.1:9090/web/download/5ba84f09fe1e4afc.jpg, , <<BLOB>>, 天津市/市辖区/河西区, 2025-12-07 15:45:54, 已领养, 1, 1, 个人
+<==        Row: 8, 团团, 6个月, 母, 2, http://127.0.0.1:9090/web/download/61c1e4baa9f5406f.jpg, , <<BLOB>>, 甘肃省/兰州市/安宁区, 2025-12-07 15:26:57, 已领养, 10, 1, 个人
+<==        Row: 7, 小九, 1岁, 母, 2,3, http://127.0.0.1:9090/web/download/63be2096e7c549c0.jpg, , <<BLOB>>, 江苏省/南京市/江宁区, 2025-12-07 15:25:10, 已领养, 7, 1, 个人
+<==        Row: 6, 福福, 6个月, 公, 1,2, http://127.0.0.1:9090/web/download/e0da45e8304c4b2b.jpg, , <<BLOB>>, 江苏省/无锡市/惠山区, 2025-11-26 01:51:05, 已领养, 3, null, 官方
+<==        Row: 5, miumiu, 3岁, 母, 1,2,3, http://127.0.0.1:9090/web/download/bf377aff431f458d.jpg, , <<BLOB>>, 天津市/市辖区/河东区, 2025-11-26 01:45:48, 待领养, 7, null, 官方
+<==        Row: 4, lucky, 4岁, 母, 1,2, http://127.0.0.1:9090/web/download/0d920599ef0f4270.jpg, , <<BLOB>>, 广东省/汕头市/龙湖区, 2025-11-26 01:42:47, 已领养, 1, null, 官方
+<==        Row: 3, 水管, 3个月, 母, 2, http://127.0.0.1:9090/web/download/7f5f36382caf4328.jpg, , <<BLOB>>, 河北省/廊坊市/广阳区, 2025-11-23 23:41:01, 待领养, 10, null, 官方
+<==        Row: 2, 团团, 5个月左右, 母, 2, http://127.0.0.1:9090/web/download/d6994dd221d3463a.jpg, , <<BLOB>>, 山东省/泰安市/泰山区, 2025-11-23 23:29:14, 待领养, 11, null, 官方
+<==        Row: 1, 橘子, 2个月左右, 公, 1,2, http://127.0.0.1:9090/web/download/526cae2793af448a.jpg, , <<BLOB>>, 上海市/市辖区/徐汇区, 2025-11-23 23:20:32, 待领养, 10, null, 官方
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29351415]
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cdefec3] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@374aadef] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@563188625 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@87e3618] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@899592495 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==> Parameters: 1(Integer)
+JDBC Connection [HikariProxyConnection@1898262885 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+==> Parameters: 1(Integer)
+==> Parameters: 1(Integer)
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cdefec3]
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==      Total: 1
+Creating a new SqlSession
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@87e3618]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e26f3d0] was not registered for synchronization because synchronization is not active
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@374aadef]
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5397724d] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48f5c695] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@706760913 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@716324785 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1124526238 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user
+==>  Preparing: SELECT id,name,age,sex,health,img,img_list,content,address,time,status,type_id,user_id,category FROM pet
+==>  Preparing: SELECT COUNT(*) AS total FROM application
+==> Parameters: 
+==> Parameters: 
+==> Parameters: 
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==    Columns: id, name, age, sex, health, img, img_list, content, address, time, status, type_id, user_id, category
+<==        Row: 1, 橘子, 2个月左右, 公, 1,2, http://127.0.0.1:9090/web/download/526cae2793af448a.jpg, , <<BLOB>>, 上海市/市辖区/徐汇区, 2025-11-23 23:20:32, 待领养, 10, null, 官方
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==        Row: 2, 团团, 5个月左右, 母, 2, http://127.0.0.1:9090/web/download/d6994dd221d3463a.jpg, , <<BLOB>>, 山东省/泰安市/泰山区, 2025-11-23 23:29:14, 待领养, 11, null, 官方
+<==        Row: 2, 222, 222, 小圆, http://127.0.0.1:9090/web/download/bc3756f98a2c4f48b6c2be23b79b9630.webp, null, null
+<==        Row: 3, 水管, 3个月, 母, 2, http://127.0.0.1:9090/web/download/7f5f36382caf4328.jpg, , <<BLOB>>, 河北省/廊坊市/广阳区, 2025-11-23 23:41:01, 待领养, 10, null, 官方
+<==        Row: 3, 333, 333, 小雨, http://127.0.0.1:9090/web/download/1a8df3fe17b44a52849b75acd2fa5e0d.webp, null, null
+<==        Row: 4, lucky, 4岁, 母, 1,2, http://127.0.0.1:9090/web/download/0d920599ef0f4270.jpg, , <<BLOB>>, 广东省/汕头市/龙湖区, 2025-11-26 01:42:47, 已领养, 1, null, 官方
+<==    Columns: total
+<==        Row: 7
+<==      Total: 3
+<==        Row: 5, miumiu, 3岁, 母, 1,2,3, http://127.0.0.1:9090/web/download/bf377aff431f458d.jpg, , <<BLOB>>, 天津市/市辖区/河东区, 2025-11-26 01:45:48, 待领养, 7, null, 官方
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5397724d]
+<==        Row: 6, 福福, 6个月, 公, 1,2, http://127.0.0.1:9090/web/download/e0da45e8304c4b2b.jpg, , <<BLOB>>, 江苏省/无锡市/惠山区, 2025-11-26 01:51:05, 已领养, 3, null, 官方
+==>  Preparing: SELECT id,name,address,place,phone,sex,age,house,family,status,user_id,instruction,pet_id,wechat,economy,animal,category,from_id FROM application ORDER BY id DESC LIMIT ?
+<==        Row: 7, 小九, 1岁, 母, 2,3, http://127.0.0.1:9090/web/download/63be2096e7c549c0.jpg, , <<BLOB>>, 江苏省/南京市/江宁区, 2025-12-07 15:25:10, 已领养, 7, 1, 个人
+==> Parameters: 10(Long)
+<==        Row: 8, 团团, 6个月, 母, 2, http://127.0.0.1:9090/web/download/61c1e4baa9f5406f.jpg, , <<BLOB>>, 甘肃省/兰州市/安宁区, 2025-12-07 15:26:57, 已领养, 10, 1, 个人
+<==        Row: 10, 乐豆, 1岁, 公, 2, http://127.0.0.1:9090/web/download/5ba84f09fe1e4afc.jpg, , <<BLOB>>, 天津市/市辖区/河西区, 2025-12-07 15:45:54, 已领养, 1, 1, 个人
+<==      Total: 9
+<==    Columns: id, name, address, place, phone, sex, age, house, family, status, user_id, instruction, pet_id, wechat, economy, animal, category, from_id
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48f5c695]
+<==        Row: 7, 11, 北京市/市辖区/东城区, 11, 11, 男, 11, 别墅, 1, 已通过, 2, 1, 4, 11, 无收入, 有狗, 官方, null
+<==        Row: 6, xxx, 北京市/市辖区/东城区, xxx, 1, 男, 1, 别墅, 家庭成员, 已通过, 2, 宠物领养, 10, 1, 无收入, 有狗, 个人, 1
+<==        Row: 5, 1, 北京市/市辖区/东城区, 1, 1, 男, 1, 乡村庭院, 1, 已通过, 2, 1, 7, 1, 职业稳定/退休, 有猫, 个人, 1
+<==        Row: 4, 1, 北京市/市辖区/东城区, 1, 1, 男, 1, 别墅, 1, 已通过, 1, 1, 6, 1, 无收入, 有猫, 官方, null
+<==        Row: 3, ces, 天津市/市辖区/河东区, ces, 12345678912, 男, 29, 普通住宅, ces, 已通过, 2, ces, 8, 12121212, 职业稳定/退休, 有猫, 个人, 1
+<==        Row: 2, 测试, 河北省/秦皇岛市/卢龙县, 测试, 17899998888, 男, 34, 乡村庭院, 独居, 已拒绝, 2, 还养了一只小土狗, 4, 17899998888, 职业稳定/退休, 有狗, 官方, null
+<==        Row: 1, 王兰花, 北京市/市辖区/朝阳区, 北京市朝阳区北京市朝阳区建国路116号, 178888899999, 女, 28, 普通住宅, 父母退休在家，我在国企上班，比较稳定，短时间没有结婚打算, 已拒绝, 1, 家里之前养过一只小猫，活到了13岁，之后我忙于学业，没有再养，现在我收入稳定，工作稳定，父母也都陆续退休，在家比较空闲，所以想领养一只小猫一起生活。, 1, wx178888899999, 家庭/共同经济, 没有宠物, 官方, null
+<==      Total: 7
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e26f3d0]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50615497] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@75449656 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a2fb4a8] was not registered for synchronization because synchronization is not active
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==> Parameters: 1(Integer)
+JDBC Connection [HikariProxyConnection@441684522 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==      Total: 1
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50615497]
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==      Total: 1
+Creating a new SqlSession
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a2fb4a8]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a593e25] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@809900565 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+Creating a new SqlSession
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@226cfef3] was not registered for synchronization because synchronization is not active
+==> Parameters: 
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==        Row: 2, 222, 222, 小圆, http://127.0.0.1:9090/web/download/bc3756f98a2c4f48b6c2be23b79b9630.webp, null, null
+JDBC Connection [HikariProxyConnection@1702496257 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+<==        Row: 3, 333, 333, 小雨, http://127.0.0.1:9090/web/download/1a8df3fe17b44a52849b75acd2fa5e0d.webp, null, null
+==>  Preparing: SELECT COUNT(*) AS total FROM rescue
+<==      Total: 3
+==> Parameters: 
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a593e25]
+<==    Columns: total
+<==        Row: 5
+<==      Total: 1
+==>  Preparing: SELECT id,name,user_name,phone,description,address,time,content,user_id,status FROM rescue ORDER BY id DESC LIMIT ?
+==> Parameters: 10(Long)
+<==    Columns: id, name, user_name, phone, description, address, time, content, user_id, status
+<==        Row: 5, 我看到一堆小猫，希望救助一下, 王兰花, 18888888888, 动物受困, 北京市/市辖区/东城区, 2025-12-09 19:04:44, <<BLOB>>, 1, 已援助
+<==        Row: 4, 我希望可以帮我救助一只小狗, 王兰花, 18888888888, 动物受困, 北京市/市辖区/东城区, 2025-12-08 15:45:48, <<BLOB>>, 1, 已取消
+<==        Row: 3, 小雨求助, 小雨, 167788889999, 动物受困, 重庆市/市辖区/涪陵区, 2025-11-26 02:04:37, <<BLOB>>, 3, 已取消
+<==        Row: 2, 测试, 测试123, 123123123123, 自身其他严重疾病, 辽宁省/本溪市/南芬区, 2025-11-26 02:02:55, <<BLOB>>, 2, 已援助
+<==        Row: 1, 测试, 测试, 13566667777, 严重皮肤病, 北京市/市辖区/朝阳区, 2025-11-26 00:25:18, <<BLOB>>, 1, 已援助
+<==      Total: 5
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@226cfef3]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19e4080b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1121321664 wrapping com.mysql.cj.jdbc.ConnectionImpl@30d90150] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19e4080b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69d98cbc] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1346663900 wrapping com.mysql.cj.jdbc.ConnectionImpl@30d90150] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM trend
+==> Parameters: 
+<==    Columns: total
+<==        Row: 4
+<==      Total: 1
+==>  Preparing: SELECT id,name,img,content,time FROM trend ORDER BY id DESC LIMIT ?
+==> Parameters: 10(Long)
+<==    Columns: id, name, img, content, time
+<==        Row: 4, 这或许是我们离《反虐待动物法》最近的一次 , http://127.0.0.1:9090/web/download/8d361fb33d1c4bbb.jpg, <<BLOB>>, 2025-11-23 22:48:32
+<==        Row: 3, 唐狗绝育计划, http://127.0.0.1:9090/web/download/6870377413ce495b.jpg, <<BLOB>>, 2025-11-22 23:03:15
+<==        Row: 2, 流动绝育车, http://127.0.0.1:9090/web/download/f5fa649ae2774fdd.jpg, <<BLOB>>, 2025-11-22 22:52:56
+<==        Row: 1, 猫只领域护理计划, http://127.0.0.1:9090/web/download/d70d127d44434290.jpg, <<BLOB>>, 2025-11-22 22:44:28
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69d98cbc]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c24a5fa] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1227587711 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c24a5fa]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51c252fa] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@135280205 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM article
+==> Parameters: 
+<==    Columns: total
+<==        Row: 6
+<==      Total: 1
+==>  Preparing: SELECT id,name,time,img,content FROM article ORDER BY id DESC LIMIT ?
+==> Parameters: 10(Long)
+<==    Columns: id, name, time, img, content
+<==        Row: 6, 为什么要办狗证 狗证有什么用, 2025-11-22 22:37:51, http://127.0.0.1:9090/web/download/cb70eb3f0fee4c1a.jpg, <<BLOB>>
+<==        Row: 5, 泰迪犬要具备基本训练 新手必学, 2025-11-22 22:36:45, http://127.0.0.1:9090/web/download/12a89cc01da94cae.png, <<BLOB>>
+<==        Row: 4, 狗够是靠什么辨别方向的 “感觉”也是一种方法, 2025-11-22 22:33:25, http://127.0.0.1:9090/web/download/326d2ccaa824453d.jpg, <<BLOB>>
+<==        Row: 3, 听说折耳猫是缺陷 每天都会很痛苦吗, 2025-11-22 22:32:51, http://127.0.0.1:9090/web/download/a61e44a45f8c48a7.jpg, <<BLOB>>
+<==        Row: 2, 小奶狗好脏 可以给它洗澡吗, 2025-11-22 22:31:29, http://127.0.0.1:9090/web/download/ed029150b9574492.jpg, <<BLOB>>
+<==        Row: 1, 狗狗胆子特别小 怎样训练狗狗的胆量, 2025-11-22 22:25:17, http://127.0.0.1:9090/web/download/700ccb784adb49f7.jpg, <<BLOB>>
+<==      Total: 6
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51c252fa]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b2dd6c7] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+JDBC Connection [HikariProxyConnection@1210475921 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2cb1dc4b] was not registered for synchronization because synchronization is not active
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+JDBC Connection [HikariProxyConnection@630863310 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+==> Parameters: 1(Integer)
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==      Total: 1
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b2dd6c7]
+<==      Total: 1
+Creating a new SqlSession
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2cb1dc4b]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@701b9d4b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1971709537 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user
+==> Parameters: 
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26ccf35c] was not registered for synchronization because synchronization is not active
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==        Row: 2, 222, 222, 小圆, http://127.0.0.1:9090/web/download/bc3756f98a2c4f48b6c2be23b79b9630.webp, null, null
+<==        Row: 3, 333, 333, 小雨, http://127.0.0.1:9090/web/download/1a8df3fe17b44a52849b75acd2fa5e0d.webp, null, null
+JDBC Connection [HikariProxyConnection@1376556558 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d7eaed8] will not be managed by Spring
+<==      Total: 3
+==>  Preparing: SELECT COUNT(*) AS total FROM comment
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@701b9d4b]
+==> Parameters: 
+<==    Columns: total
+<==        Row: 8
+<==      Total: 1
+==>  Preparing: SELECT id,content,user_id,time,pid,origin_id,item_id FROM comment ORDER BY id DESC LIMIT ?
+==> Parameters: 10(Long)
+<==    Columns: id, content, user_id, time, pid, origin_id, item_id
+<==        Row: 8, 找到同行人了呢, 1, 2025-12-09 18:47:12, 7, 6, 4
+<==        Row: 7, 大家一起支持！, 2, 2025-12-09 18:46:47, null, 6, 4
+<==        Row: 6, 我也支持！, 1, 2025-12-09 18:46:30, null, null, 4
+<==        Row: 5, 是的是的, 1, 2025-12-08 15:34:41, 4, 3, 1
+<==        Row: 4, 你说的对，确实很好, 2, 2025-12-08 15:34:17, null, 3, 1
+<==        Row: 3, 很好的一篇科普文章，给你点赞, 1, 2025-12-08 15:33:55, null, null, 1
+<==        Row: 2, 我提交了, 1, 2025-11-26 02:54:17, null, 1, 4
+<==        Row: 1, 我支持, 1, 2025-11-26 02:54:00, null, null, 4
+<==      Total: 8
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26ccf35c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70b7979c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1686087071 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70b7979c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30fca87e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@699834531 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM sys_user
+==> Parameters: 
+<==    Columns: total
+<==        Row: 3
+<==      Total: 1
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_user ORDER BY id DESC LIMIT ?
+==> Parameters: 10(Long)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 3, 333, 333, 小雨, http://127.0.0.1:9090/web/download/1a8df3fe17b44a52849b75acd2fa5e0d.webp, null, null
+<==        Row: 2, 222, 222, 小圆, http://127.0.0.1:9090/web/download/bc3756f98a2c4f48b6c2be23b79b9630.webp, null, null
+<==        Row: 1, 111, 111, 用户1, http://127.0.0.1:9090/web/download/ec67477e79c0450f92ef8dbd8d657e9f.jpg, user@email.com, 18888888888
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30fca87e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@444f2799] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1746017182 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@444f2799]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4cd7a360] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1343723360 wrapping com.mysql.cj.jdbc.ConnectionImpl@197bffcf] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM sys_admin
+==> Parameters: 
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin ORDER BY id DESC LIMIT ?
+==> Parameters: 10(Long)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4cd7a360]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39c3cc71] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1307935183 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39c3cc71]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d785b9c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@981449734 wrapping com.mysql.cj.jdbc.ConnectionImpl@134ae6af] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM type
+==> Parameters: 
+<==    Columns: total
+<==        Row: 11
+<==      Total: 1
+==>  Preparing: SELECT id,name,origin,body,height,hair,lifespan,trainability,shed,img,info,content FROM type ORDER BY id DESC LIMIT ?
+==> Parameters: 10(Long)
+<==    Columns: id, name, origin, body, height, hair, lifespan, trainability, shed, img, info, content
+<==        Row: 11, 中华田园犬, 中国, 中型, 25～55厘米左右, 短毛, 15年, 4, 2, http://127.0.0.1:9090/web/download/f7c30656d29b455ea6657a5e189c9305.webp, 中华田园犬是中国汉族几千年农耕社会背景下的产物，是历史和文化的活化石。随着城市化发展迅速，中华田园犬现在常被当作宠物犬，也广泛用于农村的看家护院和早期的狩猎。作为人类最早驯养的动物之一，中华田园犬至今仍被称作“人类最忠实的朋友”。, <<BLOB>>
+<==        Row: 10, 中华田园猫, 中国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/f8438cbf40b14597a27a34338159be5f.webp, 中华田园猫中狸花猫原产于中国。 中华田园猫性格活泼，独立，好奇心重，捕鼠能力强。 中华田园猫经常自己清理毛发，并且常掩盖粪便，防止天敌从其粪便气味发现和追踪。中华田园猫为肉食性动物，有昼伏夜出的习性。中华田园猫在早晨和晚上进食；配种时间一般在夜间。, <<BLOB>>
+<==        Row: 9, 布偶猫, 美国, 中型, 约50厘米, 长毛, 10-15年, 3, 3, http://127.0.0.1:9090/web/download/d30307458bda410eaa34922583ac8209.jpeg, 布偶猫又称布拉多尔猫，是猫中体形和体重较大的一种。布偶猫于1960年开始繁育，1965年在美国获得认可。布偶猫头呈V形，眼大而圆，被毛丰厚，四肢粗大，身体柔软，多为三色或双色猫。布偶猫全身非常松弛，像软绵绵的布偶一样。它性格温顺、恬静，对人非常友善，对疼痛的忍受性相当强，常被误认为缺乏疼痛感。它非常能容忍孩子的玩耍，也因此被称为布偶猫，是非常理想的家养宠物。, <<BLOB>>
+<==        Row: 8, 斯芬克斯猫, 加拿大, 中型, 约50cm, 无毛, 12年, 5, 1, http://127.0.0.1:9090/web/download/dd0f97860b3140d1b6bd894f5a8cfd9b.jpg, 加拿大无毛猫（Canadian Hairless）亦称斯芬克斯猫，是加拿大安大略省多伦多市养猫爱好者在1966年从一窝几乎是无毛的猫仔中，经过近交选育，特意为对猫毛过敏的爱猫者培育成的。这种猫是自然的基因突变产生的宠物猫，除了在耳、口、鼻、尾前段、脚等部位有些又薄又软的胎毛外，其它全身部分均无毛，皮肤多皱有弹性。加拿大无毛猫性情温顺，独立性强，无攻击性，能与其它猫狗相处。, <<BLOB>>
+<==        Row: 7, 美国短毛猫, 美国, 中型, 约50cm, 短毛, 10-15年, 4, 3, http://127.0.0.1:9090/web/download/1bf9f8207e20445eac5dba7cb9b425da.jpeg, 美国短毛猫素以体格魁伟，骨骼粗壮，肌肉发达，生性聪明，性格温顺著称，是短毛猫类中大型品种。皮毛厚密，毛色多达30种，其中以银色条纹品种最为名贵。, <<BLOB>>
+<==        Row: 6, 法国斗牛犬, 法国, 小型, 30-31cm, 短毛, 11-12年, 1, 1, http://127.0.0.1:9090/web/download/ae54f6d8d34f47389e118cfc9702e32b.jpeg, 法国斗牛犬(FRENCH BULLDOG)是一种活泼、聪明、肌肉发达的狗，骨骼沉重，被毛平滑、结构紧凑，体型中等或较小。表情显得警惕、好奇而感兴趣。除了切除狼爪以外，对他的任何改动都是错误的，属于失格。 法国斗牛犬亲切，敦厚，忠诚，执著，勇敢，具有独特的品位，而且完全表露于表情与动作。对小孩和善，同时也是作风彪悍，能力强，对于新鲜事物有极强的好奇心的优秀玩具犬。, <<BLOB>>
+<==        Row: 5, 柯基犬, 瑞典, 小型, 31-35cm, 长毛, 12-14年, 4, 3, http://127.0.0.1:9090/web/download/1866ecfbb29d49689d782904d50614cb.jpg, 威尔士柯基犬又称之为威尔士短腿狗，是时下很受欢迎的一个犬种，由于身长腿短长相很萌尤其受到了女生们的喜爱。, <<BLOB>>
+<==        Row: 4, 哈士奇, 俄罗斯西伯利亚地区, 大型, 51-60cm, 长毛, 13-18年, 4, 4, http://127.0.0.1:9090/web/download/167c1fa2ec434c5692fcc472c6a9cfdb.jpeg, 西伯利亚雪撬犬(哈士奇)有许多种类的狗都被称作哈士奇，而通常意义上哈士奇这个词是用来指所有在北方地区的雪橇犬”。哈士奇最初是被北极的土著居民所饲养。据DNA分析，哈士奇是世界上最古老的狗之一, <<BLOB>>
+<==        Row: 3, 萨摩耶犬, 西伯利亚, 中型, 48-59cm, 长毛, 	12-15年, 3, 4, http://127.0.0.1:9090/web/download/02740b49fafd44ffa95d11fb719ece2c.jpeg, 萨摩耶犬(英文：Samoyed)属于工作犬类，以西伯利亚牧民族萨摩人而命名，以其忍耐力与健壮的体格而闻名，所以欧洲探险家曾使用该犬拉雪橇从事南北极探险工作。机警、有力、非常活泼、高贵而文雅。由于它是在寒冷地区的工作犬，所以它拥有非常浓厚的、能抵御各种气候条件的被毛。其萨摩式的微笑，可能正代表此犬的实际性格，即沉稳，优良，性格开朗，对人有亲切感。, <<BLOB>>
+<==        Row: 2, 西高地犬, 苏格兰, 小型, 25-28cm, 长毛, 12-14年, 4, 4, http://127.0.0.1:9090/web/download/b206f81104ac41bf95ca0b78bf22fcf1.jpeg, 西高地犬是西部高地白梗简称，西部高地白梗原产地英国，产地英国，起源于19世纪。来自苏格兰西部高地的纯白色梗类，在外貌上，脸有点像狐狸，鼻梁比较长。, <<BLOB>>
+<==      Total: 10
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d785b9c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d3dc1e3] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@801002377 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,nickname,avatar_url,email,phone FROM sys_admin WHERE id=?
+==> Parameters: 1(Integer)
+<==    Columns: id, username, password, nickname, avatar_url, email, phone
+<==        Row: 1, admin, admin, 管理员, http://127.0.0.1:9090/web/download/fb1ee38bac7b4d489017eca589fea52b.jpg, admin@email.com, 18888888888
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d3dc1e3]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c65f135] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@823837995 wrapping com.mysql.cj.jdbc.ConnectionImpl@2b8df753] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM health
+==> Parameters: 
+<==    Columns: total
+<==        Row: 4
+<==      Total: 1
+==>  Preparing: SELECT id,name FROM health ORDER BY id DESC LIMIT ?
+==> Parameters: 10(Long)
+<==    Columns: id, name
+<==        Row: 4, 生病中
+<==        Row: 3, 已绝育
+<==        Row: 2, 已驱虫
+<==        Row: 1, 已免疫
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c65f135]

@@ -1,0 +1,32 @@
+-- ??/????/????/???? ?????????: Wikimedia Commons?29??????
+SET NAMES utf8mb4;
+
+UPDATE pro_pet.pet SET img = 'http://127.0.0.1:9090/web/download/526cae2793af448a.jpg', img_list = '' WHERE id = 1;
+UPDATE pro_pet.pet SET img = 'http://127.0.0.1:9090/web/download/d6994dd221d3463a.jpg', img_list = '' WHERE id = 2;
+UPDATE pro_pet.pet SET img = 'http://127.0.0.1:9090/web/download/7f5f36382caf4328.jpg', img_list = '' WHERE id = 3;
+UPDATE pro_pet.pet SET img = 'http://127.0.0.1:9090/web/download/0d920599ef0f4270.jpg', img_list = '' WHERE id = 4;
+UPDATE pro_pet.pet SET img = 'http://127.0.0.1:9090/web/download/bf377aff431f458d.jpg', img_list = '' WHERE id = 5;
+UPDATE pro_pet.pet SET img = 'http://127.0.0.1:9090/web/download/e0da45e8304c4b2b.jpg', img_list = '' WHERE id = 6;
+UPDATE pro_pet.pet SET img = 'http://127.0.0.1:9090/web/download/63be2096e7c549c0.jpg', img_list = '' WHERE id = 7;
+UPDATE pro_pet.pet SET img = 'http://127.0.0.1:9090/web/download/61c1e4baa9f5406f.jpg', img_list = '' WHERE id = 8;
+UPDATE pro_pet.pet SET img = 'http://127.0.0.1:9090/web/download/5ba84f09fe1e4afc.jpg', img_list = '' WHERE id = 10;
+UPDATE pro_pet.article SET img = 'http://127.0.0.1:9090/web/download/700ccb784adb49f7.jpg' WHERE id = 1;
+UPDATE pro_pet.article SET img = 'http://127.0.0.1:9090/web/download/ed029150b9574492.jpg' WHERE id = 2;
+UPDATE pro_pet.article SET img = 'http://127.0.0.1:9090/web/download/a61e44a45f8c48a7.jpg' WHERE id = 3;
+UPDATE pro_pet.article SET img = 'http://127.0.0.1:9090/web/download/326d2ccaa824453d.jpg' WHERE id = 4;
+UPDATE pro_pet.article SET img = 'http://127.0.0.1:9090/web/download/12a89cc01da94cae.png' WHERE id = 5;
+UPDATE pro_pet.article SET img = 'http://127.0.0.1:9090/web/download/cb70eb3f0fee4c1a.jpg' WHERE id = 6;
+UPDATE pro_pet.article SET content = REPLACE(content, 'http://127.0.0.1:9090/web/download/b206f81104ac41bf95ca0b78bf22fcf1.jpeg', 'http://127.0.0.1:9090/web/download/0fc1fb78403c40de.jpg') WHERE id = 1;
+UPDATE pro_pet.article SET content = REPLACE(content, 'http://127.0.0.1:9090/web/download/f7c30656d29b455ea6657a5e189c9305.webp', 'http://127.0.0.1:9090/web/download/469b1231f3e24033.jpg') WHERE id = 2;
+UPDATE pro_pet.article SET content = REPLACE(content, 'http://127.0.0.1:9090/web/download/1a3fe16dacd5438286c2d269cc9f4af2.jpg', 'http://127.0.0.1:9090/web/download/0e6043cae5d140d2.jpg') WHERE id = 3;
+UPDATE pro_pet.article SET content = REPLACE(content, 'http://127.0.0.1:9090/web/download/167c1fa2ec434c5692fcc472c6a9cfdb.jpeg', 'http://127.0.0.1:9090/web/download/ddb1ccd071944220.jpg') WHERE id = 4;
+UPDATE pro_pet.article SET content = REPLACE(content, 'http://127.0.0.1:9090/web/download/4aeda9e30ee14d2bb5277b0af815a5ba.png', 'http://127.0.0.1:9090/web/download/6966ff444a8b4096.jpg') WHERE id = 5;
+UPDATE pro_pet.article SET content = REPLACE(content, 'http://127.0.0.1:9090/web/download/51ca50efeebd422f90668202e70760b4.png', 'http://127.0.0.1:9090/web/download/71e17b6561af4634.jpg') WHERE id = 5;
+UPDATE pro_pet.article SET content = REPLACE(content, 'http://127.0.0.1:9090/web/download/eb818406b4ad413c86e37e972a0fd6fa.jpeg', 'http://127.0.0.1:9090/web/download/81839a8159d4440c.jpg') WHERE id = 5;
+UPDATE pro_pet.article SET content = REPLACE(content, 'http://127.0.0.1:9090/web/download/ad28632073704b518b49ebb2f30d534a.jpg', 'http://127.0.0.1:9090/web/download/697f3e487ec64d16.jpg') WHERE id = 5;
+UPDATE pro_pet.article SET content = REPLACE(content, 'http://127.0.0.1:9090/web/download/f261c10b7ecb4afd9c9a4d59002aafa9.jpg', 'http://127.0.0.1:9090/web/download/2e20108abc234a70.jpg') WHERE id = 5;
+UPDATE pro_pet.article SET content = REPLACE(content, 'http://127.0.0.1:9090/web/download/b1eb78b47cc84ed6a93d2298e3b82919.jpg', 'http://127.0.0.1:9090/web/download/850868cd45d342b1.jpg') WHERE id = 6;
+UPDATE pro_pet.trend SET img = 'http://127.0.0.1:9090/web/download/d70d127d44434290.jpg' WHERE id = 1;
+UPDATE pro_pet.trend SET img = 'http://127.0.0.1:9090/web/download/f5fa649ae2774fdd.jpg' WHERE id = 2;
+UPDATE pro_pet.trend SET img = 'http://127.0.0.1:9090/web/download/6870377413ce495b.jpg' WHERE id = 3;
+UPDATE pro_pet.trend SET img = 'http://127.0.0.1:9090/web/download/8d361fb33d1c4bbb.jpg' WHERE id = 4;
